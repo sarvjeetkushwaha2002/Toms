@@ -44,6 +44,16 @@
                         <div data-i18n="Title Case Text Generator">Title Case Text Generator</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('textBinarycodetools')}}" class="menu-link">
+                        <div data-i18n="Binary Code Translator">Binary Code Translator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('textMorsecodetools')}}" class="menu-link">
+                        <div data-i18n="Morse Code Translator">Morse Code Translator</div>
+                    </a>
+                </li>
                 <!-- <li class="menu-item">
                     <a href="{{route('textItalictools')}}" class="menu-link">
                         <div data-i18n="Italic Text Generator">Italic Text Generator</div>

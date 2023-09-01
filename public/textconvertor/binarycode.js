@@ -16,8 +16,18 @@ function updateText() {
 }
 
 function convertTextFormat(text) {
-    const smallCaps = text.split('').map(char => char === ' ' ? ' ' : char).join(' ');
-    return `${smallCaps}`;
+    const inputText = text;
+    const binaryOutput = document.getElementById('generated-text');
+
+    let binaryResult = '';
+
+    for (let i = 0; i < inputText.length; i++) {
+        const char = inputText.charCodeAt(i).toString(2);
+        binaryResult += '0'.repeat(8 - char.length) + char + ' '; // Pad to 8 bits
+    }
+
+    binaryOutput.value = binaryResult.trim();
+    return binaryOutput.value;
 }
 
 function updateGeneratedCounts() {

@@ -40,6 +40,14 @@ class TextController extends Controller
     {
         return view('admin.text.title-case-tools');
     }
+    public function textBinarycodetools()
+    {
+        return view('admin.text.binary-code-tools');
+    }
+    public function textMorsecodetools()
+    {
+        return view('admin.text.morse-code-tools');
+    }
     public function textItalictools()
     {
         return view('admin.text.italic-text-tools');

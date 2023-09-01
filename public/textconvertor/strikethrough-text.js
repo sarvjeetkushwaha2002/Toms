@@ -32,11 +32,7 @@ function updateGeneratedCounts() {
 
 function copyGeneratedText() {
     const generatedTextContainer = document.getElementById('generated-text');
-    const range = document.createRange();
-    range.selectNodeContents(generatedTextContainer);
-    const selection = window.getSelection();
-    selection.removeAllRanges();
-    selection.addRange(range);
+    generatedTextContainer.select();
 
     try {
         document.execCommand('copy');
@@ -44,8 +40,6 @@ function copyGeneratedText() {
     } catch (err) {
         console.error('Failed to copy text:', err);
     }
-
-    selection.removeAllRanges();
 }
 
 function clearGeneratedText() {

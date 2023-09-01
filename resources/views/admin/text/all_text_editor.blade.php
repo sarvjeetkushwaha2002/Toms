@@ -79,6 +79,16 @@ Dashboard ||Text Editor
                             Title Case Text Tool
                         </a>
                     </li>
+                    <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('textBinarycodetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Binary Code Translator
+                        </a>
+                    </li>
+                    <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('textMorsecodetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Morse Code Translator
+                        </a>
+                    </li>
                     <!-- <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
                         <a href="{{route('textItalictools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                             Italic Text Tool
