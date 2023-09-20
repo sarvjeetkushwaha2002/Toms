@@ -12,8 +12,9 @@ Dashboard ||Dashboard
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <div id="full-editor" contenteditable="true" oninput="updateCounts()">
-                        </div>
+                        <fieldset class="form-group position-relative has-icon-left mb-0">
+                            <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="text-input" contenteditable="true" oninput="updateCounts()"></textarea>
+                        </fieldset>
                         <p class="text-center">
                             <strong>Words Count:<span id="word-count">0</span></strong>
                             |<strong> Characters Count:<span id="character-count">0</span></strong>
@@ -114,7 +115,7 @@ Dashboard ||Dashboard
 @push('scripts')
 <script src="{{asset('currencyconvertor/country-list.js')}}"></script>
 <script src="{{asset('currencyconvertor/script.js')}}"></script>
-<script src="{{asset('textconvertor/textconvertor_luicast.js')}}"></script>
+<script src="{{asset('textconvertor/textareacovertor_luicast.js')}}"></script>
 
 <script>
     $(document).ready(function() {

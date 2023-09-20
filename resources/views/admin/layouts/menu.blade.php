@@ -8,9 +8,50 @@
             </a>
         </li>
         <li class="menu-item">
+            <a href="{{route('textConvertortools')}}" class="menu-link">
+                <div data-i18n="Convert Case">Convert Case</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textSmalltools')}}" class="menu-link">
+                <div data-i18n="Small Text Generator">Small Text Generator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textWidetools')}}" class="menu-link">
+                <div data-i18n="Wide Text Generator">Wide Text Generator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textStrikethroughtools')}}" class="menu-link">
+                <div data-i18n="Strikethrough Text Generator">Strikethrough Text Generator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textReversetools')}}" class="menu-link">
+                <div data-i18n="Reverse Text Generator">Reverse Text Generator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textTitleCasetools')}}" class="menu-link">
+                <div data-i18n="Title Case Text Generator">Title Case Text Generator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textBinarycodetools')}}" class="menu-link">
+                <div data-i18n="Binary Code Translator">Binary Code Translator</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{route('textMorsecodetools')}}" class="menu-link">
+                <div data-i18n="Morse Code Translator">Morse Code Translator</div>
+            </a>
+        </li>
+        <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-                <div data-i18n="Text Editor Tools">Text Editor Tool</div>
+                <div data-i18n="More">More</div>
+                <!-- Text Editor Tool -->
             </a>
 
             <ul class="menu-sub">
