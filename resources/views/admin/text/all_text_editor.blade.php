@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('title')
-Dashboard ||Text Editor
+Tech OnMediums || Text Editor
 @endsection
 @section('content-main')
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>All Text Editor</h4>

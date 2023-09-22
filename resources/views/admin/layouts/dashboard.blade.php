@@ -1,9 +1,9 @@
 @extends('admin.layouts.master')
 @section('title')
-Dashboard ||Dashboard
+Tech OnMediums || Dashboard
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>Home</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home</a></span></h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">

@@ -4,9 +4,8 @@
             <span class="app-brand-logo demo">
                 <img src="{{asset('assets\img\icons\brands\sketch-logo.png')}}" alt="" width="32" height="22">
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">TOMs</span>
+            <span class="app-brand-text demo menu-text fw-bold">Tech Onmediums</span>
         </a>
-
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
             <i class="ti ti-x ti-sm align-middle"></i>
         </a>

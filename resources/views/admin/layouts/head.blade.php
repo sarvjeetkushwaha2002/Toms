@@ -12,7 +12,7 @@ lower case convertor,tool onmediums,tools onmediums,Onmediums,ONMEDIUMS,onmedium
 convert case,online free text editor, convertor tool,convertor tools, wide text generator, title case text generator, free tools,free tool" />
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon/favicon.ico')}}" />
+<link rel="icon" type="image/x-icon" href="{{asset('assets\img\icons\brands\sketch-logo.png')}}" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
