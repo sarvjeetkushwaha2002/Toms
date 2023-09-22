@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 // Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 Route::controller(DashboardController::class)->group(function () {
     Route::get('/', 'indexDashboard')->name('indexDashboard');
+    Route::get('privacy-policy', 'privacyPolicy')->name('privacyPolicy');
+    Route::get('contact-us', 'contactUs')->name('contactUs');
+    Route::get('terms-and-conditions', 'termsAndConditions')->name('termsAndConditions');
 });
 Route::controller(PdfController::class)->group(function () {
     Route::get('all-convertor-pdf-tools', 'indexPdf')->name('indexPdf');

@@ -8,7 +8,7 @@ Tech OnMediums || Dashboard
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -45,7 +45,7 @@ Tech OnMediums || Dashboard
             <div class="card-body">
                 <div class="d-flex align-items-center justify-content-center h-px-500">
                     <form class="w-px-400 border rounded p-3 p-md-5">
-                        <h5 class="mb-4 text-center ">Currency Converter By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+                        <h5 class="mb-4 text-center ">Currency Converter By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
                         <div class="mb-3 amount">
                             <label class="form-label" for="form-alignment-username">Enter Your Amount</label>
                             <input type="text" id="form-alignment-username" class="form-control currency_amount" placeholder="" value="1" name="amount">
@@ -91,7 +91,7 @@ Tech OnMediums || Dashboard
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0">Other Tools By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+                    <h5 class="mb-0">Other Tools By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

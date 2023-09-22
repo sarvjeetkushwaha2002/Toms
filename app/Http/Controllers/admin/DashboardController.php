@@ -11,4 +11,9 @@ class DashboardController extends Controller
     {
         return view('admin.layouts.dashboard');
     }
+
+    public function privacyPolicy()
+    {
+        return view('admin.web configration.privacy_policy');
+    }
 }

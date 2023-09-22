@@ -8,10 +8,10 @@ Title Case Text Generator || Capitalize Text Generator ||
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Title Case Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+            <h5 class="card-header text-center">Title Case Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Enter Your Text....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
                             <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="write-text" contenteditable="true" oninput="updateText();" placeholder="enter your text"></textarea>
@@ -22,7 +22,7 @@ Title Case Text Generator || Capitalize Text Generator ||
                             | <strong>Line Count: <span id="write-line-count">0</span></strong>
                         </p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Generated Response....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
                             <textarea name="generated-description" class="form-control form-control-lg" cols="30" rows="10" id="generated-text" contenteditable="true" placeholder="Enter Your Text"></textarea>
@@ -48,7 +48,7 @@ Title Case Text Generator || Capitalize Text Generator ||
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Title Case Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+                    <h5 class="mb-0 ">How To Use Title Case Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

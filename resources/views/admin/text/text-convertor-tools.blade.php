@@ -8,7 +8,7 @@ Dashboard ||Text Convertor Editor
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+            <h5 class="card-header text-center">Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -44,7 +44,7 @@ Dashboard ||Text Convertor Editor
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Text Convertor By <a href="{{route('indexDashboard')}}" class="fw-semibold">TOMs</a></h5>
+                    <h5 class="mb-0 ">How To Use Text Convertor By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

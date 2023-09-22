@@ -4,7 +4,7 @@
             <span class="app-brand-logo demo">
                 <img src="{{asset('assets\img\icons\brands\sketch-logo.png')}}" alt="" width="32" height="22">
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">Tech Onmediums</span>
+            <span class="app-brand-text menu-text fw-bold">Tech Onmediums</span>
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
             <i class="ti ti-x ti-sm align-middle"></i>
@@ -19,6 +19,7 @@
 
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
         <ul class="navbar-nav flex-row align-items-center ms-auto">
+            👨‍💻Welcome To Tech Onmediums👨‍💻
             <!-- Language -->
             <!-- <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
