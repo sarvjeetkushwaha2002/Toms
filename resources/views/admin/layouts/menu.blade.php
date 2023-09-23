@@ -8,13 +8,8 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="{{route('textConvertortools')}}" target="_blank" class="menu-link">
-                <div data-i18n="Convert Case">Convert Case</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{route('textSmalltools')}}" target="_blank" class="menu-link">
-                <div data-i18n="Small Text Generator">Small Text Generator</div>
+            <a href="{{route('textBycripttools')}}" target="_blank" class="menu-link">
+                <div data-i18n="Bycript Hash Generator">Bycript Hash Generator</div>
             </a>
         </li>
         <li class="menu-item">
@@ -30,21 +25,6 @@
         <li class="menu-item">
             <a href="{{route('textReversetools')}}" target="_blank" class="menu-link">
                 <div data-i18n="Reverse Text Generator">Reverse Text Generator</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{route('textTitleCasetools')}}" target="_blank" class="menu-link">
-                <div data-i18n="Title Case Text Generator">Title Case Text Generator</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{route('textBinarycodetools')}}" target="_blank" class="menu-link">
-                <div data-i18n="Binary Code Translator">Binary Code Translator</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{route('textMorsecodetools')}}" target="_blank" class="menu-link">
-                <div data-i18n="Morse Code Translator">Morse Code Translator</div>
             </a>
         </li>
         <li class="menu-item">
@@ -95,8 +75,13 @@
                         <div data-i18n="Morse Code Translator">Morse Code Translator</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('textBycripttools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Bycript Text Generator">Bycript Text Generator</div>
+                    </a>
+                </li>
                 <!-- <li class="menu-item">
-                    <a href="{{route('textItalictools')}}" target="_blank"  class="menu-link">
+                    <a href="{{route('textItalictools')}}" target="_blank" class="menu-link">
                         <div data-i18n="Italic Text Generator">Italic Text Generator</div>
                     </a>
                 </li> -->

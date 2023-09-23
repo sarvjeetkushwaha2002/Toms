@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\CodeController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\PdfController;
 use App\Http\Controllers\admin\TextController;
@@ -40,5 +41,11 @@ Route::controller(TextController::class)->group(function () {
     Route::get('binary-code-translator', 'textBinarycodetools')->name('textBinarycodetools');
     Route::get('morse-code-translator', 'textMorsecodetools')->name('textMorsecodetools');
     Route::post('document-convert', 'uploadDocument')->name('uploadDocument');
+});
+
+Route::controller(CodeController::class)->group(function () {
+    Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');
+    Route::post('change-by-encript', 'textEncriptchange')->name('textEncriptchange');
+    Route::post('check-by-encript', 'textEncriptcheck')->name('textEncriptcheck');
 });
 // });

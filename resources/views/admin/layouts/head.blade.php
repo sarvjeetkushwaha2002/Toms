@@ -10,6 +10,7 @@ line count,characters count,character count,word count,tiny text generator,super
 text edior,editor,title case convertor,alternating case convertor,capitalize case convertor,inverse case convertor,upper case convertor,
 lower case convertor,tool onmediums,tools onmediums,Onmediums,ONMEDIUMS,onmediums,tools,tool, text editor,free online text editor,
 convert case,online free text editor, convertor tool,convertor tools, wide text generator, title case text generator, free tools,free tool" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="{{asset('assets\img\icons\brands\sketch-logo.png')}}" />
