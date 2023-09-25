@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function textFindreplacetools()
+    {
+        return view('admin.text.find_replace_text');
+    }
+
     public function allcodeDatatransalator()
     {
         return view('admin.text.all_code_data_translator');

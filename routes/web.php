@@ -41,10 +41,12 @@ Route::controller(TextController::class)->group(function () {
     Route::get('italic-text-converter', 'textItalictools')->name('textItalictools');
     Route::get('binary-code-translator', 'textBinarycodetools')->name('textBinarycodetools');
     Route::get('morse-code-translator', 'textMorsecodetools')->name('textMorsecodetools');
+
     Route::post('document-convert', 'uploadDocument')->name('uploadDocument');
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('find-replace-text', 'textFindreplacetools')->name('textFindreplacetools');
     Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
     Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');
     Route::get('hex-code-translator', 'textHexcodetools')->name('textHexcodetools');

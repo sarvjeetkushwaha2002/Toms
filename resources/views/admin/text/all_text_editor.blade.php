@@ -116,6 +116,11 @@ Tech OnMediums || Text Editor
                             Plan Text Convert Tool
                         </a>
                     </li>
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('textFindreplacetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Find And Replace Text Tool
+                        </a>
+                    </li>
                     <!-- <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
                         <a href="{{route('textItalictools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                             Italic Text Tool

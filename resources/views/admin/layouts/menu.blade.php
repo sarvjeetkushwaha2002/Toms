@@ -99,6 +99,11 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
+                    <a href="{{route('textFindreplacetools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Find Replace Text Generator">Find Replace Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="{{route('textItalictools')}}" target="_blank" class="menu-link">
                         <div data-i18n="Italic Text Generator">Italic Text Generator</div>
                     </a>

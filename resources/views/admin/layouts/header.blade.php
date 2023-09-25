@@ -342,23 +342,23 @@
 
             <!-- User -->
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                <a class="nav-link" href="{{asset('admin/download/tech-onmediums.apk')}}" download>
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        <img src="{{asset('assets\img\icons\brands\downloads-folder.png')}}" alt class="h-auto rounded-circle" />
+                        <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt class="h-auto rounded-circle" />
                     </div>
                 </a>
-                <!-- <ul class="dropdown-menu dropdown-menu-end">
+                <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        <a class="dropdown-item" href="javascript:void(0);">
+                        <a class="dropdown-item" href="{{asset('admin/download/tech-onmediums.apk')}}" download>
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
-                                        <img src="{{asset('assets\img\icons\brands\sketch-logo.png')}}" alt class="h-auto rounded-circle" />
+                                        <img src="{{asset('assets\img\icons\brands\downloads-folder.png')}}" alt class="h-auto rounded-circle" />
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
                                     <span class="fw-semibold d-block">Tech Onmediums</span>
-                                    <small class="text-muted">Owner</small>
+                                    <small class="text-muted">owner/download apk</small>
                                 </div>
                             </div>
                         </a>
@@ -366,7 +366,7 @@
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="dropdown-item" href="pages-profile-user.html">
                             <i class="ti ti-user-check me-2 ti-sm"></i>
                             <span class="align-middle">My Profile</span>
@@ -416,8 +416,8 @@
                             <i class="ti ti-logout me-2 ti-sm"></i>
                             <span class="align-middle">Log Out</span>
                         </a>
-                    </li>
-                </ul> -->
+                    </li> -->
+                </ul>
             </li>
             <!--/ User -->
         </ul>
