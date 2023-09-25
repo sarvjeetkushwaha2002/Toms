@@ -98,7 +98,12 @@ Tech OnMediums || Dashboard
                 <ul class="nav nav-tabs widget-nav-tabs pb-3 gap-4 mx-1" role="tablist">
                     <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
                         <a href="{{route('indexTextEditorall')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            All Type Text Editor
+                            Text Modification Formatting Tools
+                        </a>
+                    </li>
+                    <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
+                        <a href="{{route('allcodeDatatransalator')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Coding & Data Translation Tools
                         </a>
                     </li>
                     <li class="nav-item bg-label-secondary rounded p-2" role="presentation">

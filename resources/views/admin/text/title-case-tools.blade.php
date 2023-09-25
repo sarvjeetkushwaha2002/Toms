@@ -3,7 +3,7 @@
 Title Case Text Generator || Capitalize Text Generator ||
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Editor/</a></span>Title Case Text Generator</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Modification Formatting Tools/</a></span>Title Case Text Generator</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">

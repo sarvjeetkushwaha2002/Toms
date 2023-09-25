@@ -3,7 +3,7 @@
 Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>Online Bcrypt Hash Generator & Checker</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Online Bcrypt Hash Generator & Checker</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">
@@ -153,26 +153,6 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
 </script>
 
 <script>
-    //Copy Text Start
-    // function copyToClipboard() {
-    //     const textarea = document.getElementById('encripted_code');
-    //     const selectedText = textarea.innerText.substring(textarea.selectionStart, textarea.selectionEnd);
-    //     const textToCopy = selectedText.length > 0 ? selectedText : textarea.innerText;
-
-    //     copyTextToClipboard(textToCopy);
-    // }
-
-    // function copyTextToClipboard(text) {
-    //     const dummyInput = document.createElement('textarea');
-    //     dummyInput.style.position = 'absolute';
-    //     dummyInput.style.left = '-9999px';
-    //     dummyInput.textContent = text;
-    //     document.body.appendChild(dummyInput);
-    //     dummyInput.select();
-    //     document.execCommand('copy');
-    //     document.body.removeChild(dummyInput);
-    // }
-
     function copyToClipboard() {
         const inputField = document.getElementById('encripted_code');
         const selection = window.getSelection();

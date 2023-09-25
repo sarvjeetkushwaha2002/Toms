@@ -32,6 +32,7 @@ Route::controller(PdfController::class)->group(function () {
 Route::controller(TextController::class)->group(function () {
     Route::get('all-text-editor-tools', 'indexTextEditorall')->name('indexTextEditorall');
     Route::get('text-convertor-tools', 'textConvertortools')->name('textConvertortools');
+    Route::get('plan-text-convertor', 'plantextConvertortools')->name('plantextConvertortools');
     Route::get('small-text-generator', 'textSmalltools')->name('textSmalltools');
     Route::get('wide-text-generator', 'textWidetools')->name('textWidetools');
     Route::get('strikethrough-text-generator', 'textStrikethroughtools')->name('textStrikethroughtools');
@@ -44,7 +45,9 @@ Route::controller(TextController::class)->group(function () {
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
     Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');
+    Route::get('hex-code-translator', 'textHexcodetools')->name('textHexcodetools');
     Route::post('change-by-encript', 'textEncriptchange')->name('textEncriptchange');
     Route::post('check-by-encript', 'textEncriptcheck')->name('textEncriptcheck');
 });

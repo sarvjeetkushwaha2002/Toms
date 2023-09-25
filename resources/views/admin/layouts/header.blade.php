@@ -2,7 +2,7 @@
     <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
         <a href="{{route('indexDashboard')}}" class="app-brand-link gap-2">
             <span class="app-brand-logo demo">
-                <img src="{{asset('assets\img\icons\brands\sketch-logo.png')}}" alt="" width="32" height="22">
+                <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt="" width="32" height="22" class="rounded-circle">
             </span>
             <span class="app-brand-text menu-text fw-bold">Tech Onmediums</span>
         </a>
@@ -19,7 +19,7 @@
 
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-            👨‍💻Welcome To Tech Onmediums👨‍💻
+            👨‍💻Welcome To Tech Onmediums
             <!-- Language -->
             <!-- <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -342,14 +342,14 @@
 
             <!-- User -->
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                <a class="nav-link" href="{{asset('admin/download/tech-onmediums.apk')}}" download>
                     <div class="avatar avatar-online">
-                        <img src="{{asset('assets\img\icons\brands\sketch-logo.png')}}" alt class="h-auto rounded-circle" />
+                        <img src="{{asset('assets\img\icons\brands\downloads-folder.png')}}" alt class="h-auto rounded-circle" />
                     </div>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end">
+                <!-- <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        <a class="dropdown-item" href="pages-account-settings-account.html">
+                        <a class="dropdown-item" href="javascript:void(0);">
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
@@ -357,7 +357,7 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">TOMs</span>
+                                    <span class="fw-semibold d-block">Tech Onmediums</span>
                                     <small class="text-muted">Owner</small>
                                 </div>
                             </div>
@@ -366,7 +366,7 @@
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a class="dropdown-item" href="pages-profile-user.html">
                             <i class="ti ti-user-check me-2 ti-sm"></i>
                             <span class="align-middle">My Profile</span>
@@ -416,8 +416,8 @@
                             <i class="ti ti-logout me-2 ti-sm"></i>
                             <span class="align-middle">Log Out</span>
                         </a>
-                    </li> -->
-                </ul>
+                    </li>
+                </ul> -->
             </li>
             <!--/ User -->
         </ul>

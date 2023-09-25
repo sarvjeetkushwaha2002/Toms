@@ -9,9 +9,19 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function allcodeDatatransalator()
+    {
+        return view('admin.text.all_code_data_translator');
+    }
+
     public function textBycripttools()
     {
         return view('admin.text.bycript_code_tools');
+    }
+
+    public function textHexcodetools()
+    {
+        return view('admin.text.hex-code-tools');
     }
 
     public function textEncriptchange(Request $request)

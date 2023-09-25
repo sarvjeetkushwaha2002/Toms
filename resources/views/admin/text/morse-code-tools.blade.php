@@ -3,7 +3,7 @@
 Morse Code Translator || Morse Translator || Convert Case
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Editor/</a></span>Morse Code Translator</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Morse Code Translator</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">

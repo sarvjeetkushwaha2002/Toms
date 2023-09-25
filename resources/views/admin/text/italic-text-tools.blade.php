@@ -3,7 +3,7 @@
 Italic Text Generator || Italics Generator ||
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Editor/</a></span>Italic Text Generator</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Modification Formatting Tools/</a></span>Italic Text Generator</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">

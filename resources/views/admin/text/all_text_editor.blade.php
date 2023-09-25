@@ -3,7 +3,7 @@
 Tech OnMediums || Text Editor
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>All Text Editor</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>All Text Modification Formatting Tools</h4>
 <div class="row">
     <!-- Full Editor -->
     <!-- <div class="col-12 mb-4">
@@ -111,14 +111,9 @@ Tech OnMediums || Text Editor
                             Title Case Text Tool
                         </a>
                     </li>
-                    <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
-                        <a href="{{route('textBinarycodetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            Binary Code Translator
-                        </a>
-                    </li>
-                    <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
-                        <a href="{{route('textMorsecodetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            Morse Code Translator
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('plantextConvertortools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Plan Text Convert Tool
                         </a>
                     </li>
                     <!-- <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">

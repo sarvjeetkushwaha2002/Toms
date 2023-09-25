@@ -16,6 +16,12 @@ class TextController extends Controller
     {
         return view('admin.text.text-convertor-tools');
     }
+
+    public function plantextConvertortools()
+    {
+        return view('admin.text.plantext-convertor-tools');
+    }
+
     public function textSmalltools()
     {
         return view('admin.text.small-text-tools');

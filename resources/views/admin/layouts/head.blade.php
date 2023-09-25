@@ -13,7 +13,7 @@ convert case,online free text editor, convertor tool,convertor tools, wide text 
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{asset('assets\img\icons\brands\sketch-logo.png')}}" />
+<link rel="icon" type="image/x-icon" href="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
