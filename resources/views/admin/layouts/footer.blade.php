@@ -8,9 +8,9 @@
             , made with ❤️ by <a href="{{route('indexDashboard')}}" target="_blank" class="fw-semibold">Tech Onmediums</a>
         </div>
         <div>
-            <a href="#" class="footer-link me-1" target="_blank">Contact Us</a>
+            <a href="{{route('contactUs')}}" class="footer-link me-1" target="_blank">Contact Us</a>
             <a href="{{route('privacyPolicy')}}" target="_blank" class="footer-link me-1">Privacy Policy</a>
-            <a href="#" target="_blank" class="footer-link me-1">Terms And Conditions</a>
+            <a href="{{route('termAndConditions')}}" target="_blank" class="footer-link me-1">Terms And Conditions</a>
         </div>
         <div>
             <div class="col-md-12 col-sm-12">

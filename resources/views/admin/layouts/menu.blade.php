@@ -93,6 +93,26 @@
         <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                <div data-i18n="Website Page Condition Generator">Website Page Condition Generator</div>
+                <!-- Text Editor Tool -->
+            </a>
+
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{route('contactUsPage')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Contact Us Text Generator"> Contact Us Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('termConditionPage')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Terms & Conditions Text Generator">Terms & Conditions Text Generator</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
                 <div data-i18n="More">More</div>
                 <!-- Text Editor Tool -->
             </a>
@@ -103,11 +123,11 @@
                         <div data-i18n="Find Replace Text Generator">Find Replace Text Generator</div>
                     </a>
                 </li>
-                <li class="menu-item">
+                <!-- <li class="menu-item">
                     <a href="{{route('textItalictools')}}" target="_blank" class="menu-link">
                         <div data-i18n="Italic Text Generator">Italic Text Generator</div>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </li>
     </ul>

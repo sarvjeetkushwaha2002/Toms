@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\CodeController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\PdfController;
 use App\Http\Controllers\admin\TextController;
+use App\Http\Controllers\admin\WebPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,5 +53,17 @@ Route::controller(CodeController::class)->group(function () {
     Route::get('hex-code-translator', 'textHexcodetools')->name('textHexcodetools');
     Route::post('change-by-encript', 'textEncriptchange')->name('textEncriptchange');
     Route::post('check-by-encript', 'textEncriptcheck')->name('textEncriptcheck');
+});
+
+Route::controller(WebPageController::class)->group(function () {
+    Route::get('term-condition', 'termAndConditions')->name('termAndConditions');
+    Route::get('contact-us', 'contactUs')->name('contactUs');
+    Route::get('term-condition-page', 'termConditionPage')->name('termConditionPage');
+    Route::get('fetch-states/{country_id}', 'fetchStates')->name('fetchStates');
+    Route::post('create-terms-condition', 'createTermsCondition')->name('createTermsCondition');
+    Route::get('view-page', 'viewPage')->name('viewPage');
+    Route::get('contact-us-page', 'contactUsPage')->name('contactUsPage');
+    Route::post('create-contact-us', 'createContactUs')->name('createContactUs');
+    Route::get('view1-page', 'viewPage1')->name('viewPage1');
 });
 // });

@@ -74,8 +74,6 @@ Tech OnMediums || Dashboard
 
                         </div>
                         <div class="mb-3 exchange-rate">
-                         
-                            1 USD = 118.16 NPR
                         </div>
                         <div class="d-grid gap-2">
                             <button type="button" class="btn btn-success waves-effect waves-light exchange_currency">Get Exchange Currency</button>
@@ -111,6 +109,16 @@ Tech OnMediums || Dashboard
                             Bycript Hash Generator
                         </a>
                     </li>
+                    <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
+                        <a href="{{route('termConditionPage')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Terms & Conditions Text Generator
+                        </a>
+                    </li>
+                    <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
+                        <a href="{{route('contactUsPage')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Contact Us Text Generator
+                        </a>
+                    </li>
 
                     <li class="nav-item" role="presentation">
                         <a href="javascript:void(0);" class="nav-link btn d-flex align-items-center justify-content-center disabled" role="tab" data-bs-toggle="tab" aria-selected="false" tabindex="-1">
@@ -124,11 +132,11 @@ Tech OnMediums || Dashboard
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('currencyconvertor/country-list.js')}}"></script>
-<script src="{{asset('currencyconvertor/script.js')}}"></script>
+<!-- <script src="{{asset('currencyconvertor/country-list.js')}}"></script>
+<script src="{{asset('currencyconvertor/script.js')}}"></script> -->
 <script src="{{asset('textconvertor/textareacovertor_luicast.js')}}"></script>
 
-<script>
+<!-- <script>
     $(document).ready(function() {
         $(document).on('click', '.exchange_currency', function() {
             var currency_amount = $('.currency_amount').val();
@@ -153,6 +161,6 @@ Tech OnMediums || Dashboard
             });
         });
     });
-</script>
+</script> -->
 
 @endpush
