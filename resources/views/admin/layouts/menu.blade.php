@@ -58,6 +58,40 @@
                         <div data-i18n="Title Case Text Generator">Title Case Text Generator</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('textItalictools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Italic Text Generator">Italic Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('textBoldtools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Bold Text Generator">Bold Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('textFindreplacetools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Find Replace Text Generator">Find Replace Text Generator</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                <div data-i18n="Social Media Text">Social Media Text</div>
+            </a>
+
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{route('textSocialtools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Social Media Text Generator">Social Media Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('textBubbletools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Bubble Text Generator">Bubble Text Generator</div>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="menu-item">
@@ -119,15 +153,10 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{route('textFindreplacetools')}}" target="_blank" class="menu-link">
-                        <div data-i18n="Find Replace Text Generator">Find Replace Text Generator</div>
+                    <a href="{{route('textBubbletools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Bubble Text Generator">Bubble Text Generator</div>
                     </a>
                 </li>
-                <!-- <li class="menu-item">
-                    <a href="{{route('textItalictools')}}" target="_blank" class="menu-link">
-                        <div data-i18n="Italic Text Generator">Italic Text Generator</div>
-                    </a>
-                </li> -->
             </ul>
         </li>
     </ul>

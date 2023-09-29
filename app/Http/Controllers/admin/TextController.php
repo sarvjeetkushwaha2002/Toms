@@ -58,4 +58,18 @@ class TextController extends Controller
     {
         return view('admin.text.italic-text-tools');
     }
+    public function textBoldtools()
+    {
+        return view('admin.text.bold_text_tools');
+    }
+
+    public function textSocialtools()
+    {
+        return view('admin.facebook.facebook_font_tools');
+    }
+
+    public function textBubbletools()
+    {
+        return view('admin.facebook.bubble_text_tools');
+    }
 }

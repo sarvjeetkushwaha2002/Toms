@@ -40,9 +40,11 @@ Route::controller(TextController::class)->group(function () {
     Route::get('reverse-text-generator', 'textReversetools')->name('textReversetools');
     Route::get('title-case-converter', 'textTitleCasetools')->name('textTitleCasetools');
     Route::get('italic-text-converter', 'textItalictools')->name('textItalictools');
+    Route::get('bold-text-converter', 'textBoldtools')->name('textBoldtools');
     Route::get('binary-code-translator', 'textBinarycodetools')->name('textBinarycodetools');
     Route::get('morse-code-translator', 'textMorsecodetools')->name('textMorsecodetools');
-
+    Route::get('social-media-text-converter', 'textSocialtools')->name('textSocialtools');
+    Route::get('bubble-text-converter', 'textBubbletools')->name('textBubbletools');
     Route::post('document-convert', 'uploadDocument')->name('uploadDocument');
 });
 
