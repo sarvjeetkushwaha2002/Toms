@@ -11,7 +11,7 @@
     - If you want to give suggestions to improve <b>{{$data['website_name']}}</b><br />
     - If you face any error or any issues on our site.
     <p>Don't hesitate to mail us on: <b>{{$data['email']}}</b> </p>
-    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://tech.onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
+    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
 </div>
 @endif
 @if($data['phone'] !=null)
@@ -27,7 +27,7 @@
     - If you want to give suggestions to improve <b>{{$data['website_name']}}</b><br />
     - If you face any error or any issues on our site.
     <p>Don't hesitate to message on: <b>{{$data['phone']}}</b> </p>
-    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://tech.onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
+    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
 </div>
 @endif
 @if($data['phone'] ==null && $data['email'] ==null)
@@ -43,6 +43,6 @@
     - If you want to give suggestions to improve <b>{{$data['website_name']}}</b><br />
     - If you face any error or any issues on our site.
     <p>Don't hesitate to message or mail us on: <b>No</b></p>
-    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://tech.onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
+    <p>This Agreement shall begin on the date hereof. Our Contact Us were created with the help of the <a href="https://onmediums.com/contact-us-page">Free Contact Us Generator</a>.</p>
 </div>
 @endif

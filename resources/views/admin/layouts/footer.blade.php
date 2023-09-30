@@ -5,7 +5,7 @@
             <script>
                 document.write(new Date().getFullYear());
             </script>
-            , made with ❤️ by <a href="{{route('indexDashboard')}}" target="_blank" class="fw-semibold">Tech Onmediums</a>
+            , made with ❤️ by <a href="{{route('indexDashboard')}}" target="_blank" class="fw-semibold">OnMediums</a>
         </div>
         <div>
             <a href="{{route('contactUs')}}" class="footer-link me-1" target="_blank">Contact Us</a>

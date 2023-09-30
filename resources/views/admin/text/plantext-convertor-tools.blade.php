@@ -8,7 +8,7 @@ Plain Text Converter || Convertor Case
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Plan Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Plan Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -38,7 +38,7 @@ Plain Text Converter || Convertor Case
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Plan Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Plan Text Convertor Case By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

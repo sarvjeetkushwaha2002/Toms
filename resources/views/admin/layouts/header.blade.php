@@ -4,7 +4,7 @@
             <span class="app-brand-logo demo">
                 <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt="" width="32" height="22" class="rounded-circle">
             </span>
-            <span class="app-brand-text menu-text fw-bold">Tech Onmediums</span>
+            <span class="app-brand-text menu-text fw-bold">OnMediums</span>
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
             <i class="ti ti-x ti-sm align-middle"></i>
@@ -19,7 +19,7 @@
 
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-            👨‍💻Welcome To Tech Onmediums
+            👨‍💻Welcome To OnMediums
             <!-- Language -->
             <!-- <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -357,7 +357,7 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">Tech Onmediums</span>
+                                    <span class="fw-semibold d-block">Onmediums</span>
                                     <small class="text-muted">owner/download apk</small>
                                 </div>
                             </div>

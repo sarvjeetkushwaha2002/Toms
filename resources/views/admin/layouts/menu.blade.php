@@ -138,6 +138,16 @@
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="{{route('aboutUsPage')}}" target="_blank" class="menu-link">
+                        <div data-i18n="About Us Text Generator">About Us Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('privacyPolicyPage')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Privacy Policy Text Generator">Privacy Policy Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="{{route('termConditionPage')}}" target="_blank" class="menu-link">
                         <div data-i18n="Terms & Conditions Text Generator">Terms & Conditions Text Generator</div>
                     </a>

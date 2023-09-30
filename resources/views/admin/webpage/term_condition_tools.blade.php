@@ -8,7 +8,7 @@ Terms & Conditions Generator || Online Free Terms & Conditions Generator || Webs
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Online Free Terms & Conditions Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Online Free Terms & Conditions Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12">
@@ -107,7 +107,7 @@ Terms & Conditions Generator || Online Free Terms & Conditions Generator || Webs
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Online Free Terms & Conditions Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Online Free Terms & Conditions Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

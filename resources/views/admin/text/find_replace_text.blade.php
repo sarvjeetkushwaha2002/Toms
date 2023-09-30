@@ -8,7 +8,7 @@ Text Replacer || Find and Replace Text Online || Text Replacement Tools
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Find and Replace Text By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Find and Replace Text By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row g-3 mb-3">
                     <div class="col-sm-6 col-md-6 col-lg-6">
@@ -60,7 +60,7 @@ Text Replacer || Find and Replace Text Online || Text Replacement Tools
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Find and Replace Text By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Find and Replace Text By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">

@@ -1,14 +1,14 @@
 @extends('admin.layouts.master')
 @section('title')
-Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Page Contact Us Text Generator||
+About Us Text Generator || Online Free About Us Text Generator|| Website Page About Us Text Generator||
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Online Free Contact Us Text Generator</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Online Free About Us Text Generator</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Online Free Contact Us Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+            <h5 class="card-header text-center">Online Free About Us Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12">
@@ -29,14 +29,13 @@ Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Pag
                                     <span id="form_error" style="color: red;"></span>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="company_name">Your Company Name</label>
-                                    <input type="text" id="company_name" class="form-control" placeholder="Enter..." name="company_name" required>
-                                    <p>If You don't have a company registered,enter the website name.</p>
+                                    <label class="form-label" for="website_name">Your Website Name</label>
+                                    <input type="text" id="website_name" class="form-control" placeholder="Enter..." name="website_name" required>
                                 </div>
                                 <hr>
                                 <div class="mb-3">
-                                    <label class="form-label" for="website_name">Your Website Name</label>
-                                    <input type="text" id="website_name" class="form-control" placeholder="Enter..." name="website_name" required>
+                                    <label class="form-label" for="website_category">Your Website Category</label>
+                                    <input type="text" id="website_category" class="form-control" placeholder="Enter..." name="website_category" required>
                                 </div>
                                 <hr>
                                 <div class="mb-3">
@@ -75,7 +74,7 @@ Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Pag
                                     <input type="text" id="phone" class="form-control" placeholder="Enter..." name="phone">
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="contactUs">Generate Contact Us</button>
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="aboutUs">Generate About Us</button>
                                 </div>
                             </form>
                         </div>
@@ -113,17 +112,17 @@ Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Pag
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Online Free Contact Us Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Online Free About Us Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-title mb-0">
-                            <h5 class="mb-0">Online Free Contact Us Text Generator</h5>
-                            <small>Fill The Form and Click the Button after Generator Contact Us </small><br><br>
-                            <p><b>1.</b>First, you will fill out the form, then click on the "Generate Contact Us" button and wait. <br><br>
-                                <b>2.</b>First, you will fill out the form and then click on the "Generate Contact Us" button and wait. If you have filled it out correctly, you will see a textarea box with HTML code, and you can copy what you need.
+                            <h5 class="mb-0">Online Free About Us Text Generator</h5>
+                            <small>Fill The Form and Click the Button after Generator About Us </small><br><br>
+                            <p><b>1.</b>First, you will fill out the form, then click on the "Generate About Us" button and wait. <br><br>
+                                <b>2.</b>First, you will fill out the form and then click on the "Generate About Us" button and wait. If you have filled it out correctly, you will see a textarea box with HTML code, and you can copy what you need.
                             </p>
                         </div>
                     </div>
@@ -181,9 +180,9 @@ Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Pag
 <script>
     $(document).ready(function() {
         $('#button-1').hide();
-        $(document).on('click', '#contactUs', function() {
+        $(document).on('click', '#aboutUs', function() {
             var formData = $("#sendbydata").serialize();
-            var newurl = "{{ route('createContactUs') }}";
+            var newurl = "{{ route('createAboutUs') }}";
             $.ajax({
                 url: newurl,
                 type: 'post',

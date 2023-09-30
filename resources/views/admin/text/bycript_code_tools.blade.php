@@ -8,7 +8,7 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Online Bcrypt Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Online Bcrypt Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
@@ -65,7 +65,7 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Online Bcrypt Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Online Bcrypt Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">
@@ -74,7 +74,7 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
                         <div class="card-title mb-0">
                             <h5 class="mb-0">Online Bcrypt Hash Generator & Checker</h5>
                             <small>Enter Value and Click the Button after Generator </small><br><br>
-                            <p><b>1.</b>You mentioned that when a value is entered in the "String" 'Tech Onmediums' input, the text will be generated in Hash formats '$2y$10$P3svB4ULnTdwj8tCB340t.QY3PxEtvSgCFq9GqyaU36R7KoCUFY6a' in the second input. <br><br>
+                            <p><b>1.</b>You mentioned that when a value is entered in the "String" 'OnMediums' input, the text will be generated in Hash formats '$2y$10$P3svB4ULnTdwj8tCB340t.QY3PxEtvSgCFq9GqyaU36R7KoCUFY6a' in the second input. <br><br>
                                 <b>2.</b>Do you want to convert your text into an Hash Formate? Then use this simple and free Online Bcrypt Hash Generator. All you have to do is write the words that you want to be converted into hash in the down hand field of the Bycript generator, then as you write it out, you’re going to see the font get converted into Hash code on the up. Once you are done, simply copy the Hash Code and paste it where you want.
                             </p>
                         </div>

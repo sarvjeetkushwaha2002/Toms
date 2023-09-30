@@ -67,5 +67,11 @@ Route::controller(WebPageController::class)->group(function () {
     Route::get('contact-us-page', 'contactUsPage')->name('contactUsPage');
     Route::post('create-contact-us', 'createContactUs')->name('createContactUs');
     Route::get('view1-page', 'viewPage1')->name('viewPage1');
+    Route::get('about-us-page', 'aboutUsPage')->name('aboutUsPage');
+    Route::post('create-about-us', 'createAboutUs')->name('createAboutUs');
+    Route::get('view2-page', 'viewPage2')->name('viewPage2');
+    Route::get('privacy-policy-page', 'privacyPolicyPage')->name('privacyPolicyPage');
+    Route::post('create-privacy-policy', 'createPrivacyPolicy')->name('createPrivacyPolicy');
+    Route::get('view3-page', 'viewPage3')->name('viewPage3');
 });
 // });

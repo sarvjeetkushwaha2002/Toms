@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('title')
-Tech OnMediums || Text Editor
+OnMediums || Text Editor
 @endsection
 @section('content-main')
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>All Text Modification Formatting Tools</h4>
@@ -8,7 +8,7 @@ Tech OnMediums || Text Editor
     <!-- Full Editor -->
     <!-- <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -39,7 +39,7 @@ Tech OnMediums || Text Editor
     </div> -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+            <h5 class="card-header text-center">Text Editor By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -75,7 +75,7 @@ Tech OnMediums || Text Editor
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0">Other Tools Text Relaited By <a href="{{route('indexDashboard')}}" class="fw-semibold">Tech Onmediums</a></h5>
+                    <h5 class="mb-0">Other Tools Text Relaited By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                     <!-- <small class="text-muted">Yearly Earnings Overview</small> -->
                 </div>
             </div>
