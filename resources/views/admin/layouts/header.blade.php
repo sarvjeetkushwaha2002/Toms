@@ -4,7 +4,7 @@
             <span class="app-brand-logo demo">
                 <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt="" width="32" height="22" class="rounded-circle">
             </span>
-            <span class="app-brand-text menu-text fw-bold">OnMediums</span>
+            <span class="app-brand-text demo menu-text fw-bold">OnMediums</span>
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
             <i class="ti ti-x ti-sm align-middle"></i>
