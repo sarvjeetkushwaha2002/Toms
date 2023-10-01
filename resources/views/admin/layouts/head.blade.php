@@ -1,15 +1,25 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<title>@yield('title')</title>
+<title>OnMediums - Tech Tools and Blog||@yield('title')</title>
+<meta name="description" content="Explore the latest in tech tools and insightful blog articles at OnMediums.
+Stay updated with the latest tech trends and innovations in the digital world.">
+<meta name="keywords" content="OnMediums,onmediums,medium,Medium,tech tools, blog, technology, digital innovations, tech trends,case converter,
+text case converter,letter case converter,uppercase to lowercase converter,lowercase to uppercase converter,find and replace text online,
+title case converter,sentence case converter,capitalize text online,change case tool,online case conversion,online text modifier,
+text format converter,letter casing tool,case manipulator,text case changer,convert case online,word case changer,free text editing online,
+uppercase to lowercase,lowercase to uppercase,text formatting tool,convert text to different cases,text casing tool,facebook font generator online,
+text case transformer,free online text generator,italic and bold text generator,text style generator,online font style changer,bcrypt password hashing tool,
+online font style changer,free text styling tool,italic and bold text maker,online text decorator,search and replace text online,
+free text replacement tool,online text find and replace,text search and replace tool,find and replace text generator,online string replacement,
+social media font changer,custom text for social media profiles,free font styles for facebook posts,cool font for social media,bcrypt hash generator online,
+online text generator for social media,generate fonts for instagram, twitter, and facebook,free online bubble letter text generator,
+online bubble text generator tool,text in bubble letters online,free bcrypt text generator online,online bcrypt encryption tool,generate bcrypt hash for free,
+bcrypt password encryption tool,bcrypt online generator with salt,secure password hashing online,free Website page generator,contact us page generator,
+about us page generator,privacy policy generator,terms and conditions generator,website legal page generator,free website generator for legal pages,free terms of service generator,
+digital code conversion tool,binary code generator online,hexadecimal code generator free,morse code converter tool,free binary to hex converter,online morse code generator,
+binary to morse code converter,hexadecimal to morse code translator,convert text to binary, hex, and morse Code Online">
 
-<meta name="description" content="toms,TOms,free online text tools,backwards text convert tool,backwards text generator,
-reverse text convert tool,reverse text generator,vaporwave text convert tool,vaporwave text generator,wide text convert tool,
-wide text generator,cross out text convert tool,cross out text generator,strikethrough text generator,strikethrough text convertor tool,
-line count,characters count,character count,word count,tiny text generator,superscript text generator,small text generator,convert case,
-text edior,editor,title case convertor,alternating case convertor,capitalize case convertor,inverse case convertor,upper case convertor,
-lower case convertor,tool onmediums,tools onmediums,Onmediums,ONMEDIUMS,onmediums,tools,tool, text editor,free online text editor,
-convert case,online free text editor, convertor tool,convertor tools, wide text generator, title case text generator, free tools,free tool" />
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Favicon -->

@@ -72,4 +72,8 @@ class TextController extends Controller
     {
         return view('admin.facebook.bubble_text_tools');
     }
+    public function textduplicateLinetools()
+    {
+        return view('admin.textsecond.duplicate_line_remover');
+    }
 }

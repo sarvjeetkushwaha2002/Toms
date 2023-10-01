@@ -163,10 +163,15 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
+                    <a href="{{route('textduplicateLinetools')}}" target="_blank" class="menu-link">
+                        <div data-i18n="Duplicate Line Remover Generator">Duplicate Line Remover Generator</div>
+                    </a>
+                </li>
+                <!-- <li class="menu-item">
                     <a href="{{route('textBubbletools')}}" target="_blank" class="menu-link">
                         <div data-i18n="Bubble Text Generator">Bubble Text Generator</div>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </li>
     </ul>

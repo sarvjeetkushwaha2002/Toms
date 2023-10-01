@@ -45,6 +45,7 @@ Route::controller(TextController::class)->group(function () {
     Route::get('morse-code-translator', 'textMorsecodetools')->name('textMorsecodetools');
     Route::get('social-media-text-converter', 'textSocialtools')->name('textSocialtools');
     Route::get('bubble-text-converter', 'textBubbletools')->name('textBubbletools');
+    Route::get('duplicate-line-remover', 'textduplicateLinetools')->name('textduplicateLinetools');
     Route::post('document-convert', 'uploadDocument')->name('uploadDocument');
 });
 

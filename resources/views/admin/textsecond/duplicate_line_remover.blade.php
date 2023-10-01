@@ -1,20 +1,21 @@
 @extends('admin.layouts.master')
 @section('title')
-Binary Code Translator || Binary Translator || Convert Case
+Duplicate Line Remover || Online Duplicate Line Remover || Convert Case
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Binary Code Translator</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('allcodeDatatransalator')}}">All Coding & Data Translation Tools/</a></span>Duplicate Line Remover</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Binary Code Translator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+            <h5 class="card-header text-center">Duplicate Line Remover By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Enter Your Text....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
-                            <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="write-text" contenteditable="true" oninput="updateText();" placeholder="Enter Your Text"></textarea>
+                            <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="write-text" contenteditable="true" oninput="updateText();" placeholder="Enter Your Text
+Enter Your Text"></textarea>
                         </fieldset>
                         <p class="text-center">
                             <strong>Words Count: <span id="write-word-count">0</span></strong>
@@ -25,7 +26,7 @@ Binary Code Translator || Binary Translator || Convert Case
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Generated Response....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
-                            <textarea name="generated-description" class="form-control form-control-lg" cols="30" rows="10" id="generated-text" contenteditable="true" placeholder="01000101 01101110 01110100 01100101 01110010 00100000 01011001 01101111 01110101 01110010 00100000 01010100 01100101 01111000 01110100"></textarea>
+                            <textarea name="generated-description" class="form-control form-control-lg" cols="30" rows="10" id="generated-text" contenteditable="true" placeholder="Enter Your Text"></textarea>
                         </fieldset>
                         <p class="text-center">
                             <strong>Words Count: <span id="generated-word-count">0</span></strong>
@@ -48,17 +49,18 @@ Binary Code Translator || Binary Translator || Convert Case
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Binary Code Translator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Duplicate Line Remover By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-title mb-0">
-                            <h5 class="mb-0">Binary Code Translator</h5>
+                            <h5 class="mb-0">Duplicate Line Remover</h5>
                             <small>Enter Value Automatic Generator </small><br><br>
-                            <p><b>1.</b>You mentioned that when a value is entered in the "Enter your text" 'Enter your text' textarea, the text will be generated in binary text formats '01010011 01100001 01110010 01110110 01101010 01100101 01100101 01110100' in the second textarea. <br><br>
-                                <b>2.</b> You can use this handy online binary code translation tool to quickly convert your English text into a binary code. Simply enter the regular text as you would in the left column panel and then you will see it automatically get translated into a series of binary code on the right. Likewise, if you have binary code - enter it into the right panel of the binary translator and get the english translation.
+                            <p><b>1.</b>You mentioned that when a value is entered in the "Enter your text" 'Enter Your Text,
+                                Enter Your Text' textarea, the text will be generated in text formats 'Enter Your Text' in the second textarea. <br><br>
+                                <b>2.</b>Whether you're handling extensive datasets, streamlining lists, or seeking to eradicate repetitive information, our tool is here to streamline your process. Just paste your text, and let our tool take care of the rest!"
                             </p>
                         </div>
                     </div>
@@ -91,5 +93,5 @@ Binary Code Translator || Binary Translator || Convert Case
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/binarycode.js')}}"></script>
+<script src="{{asset('textconvertor/duplicatelineremover.js')}}"></script>
 @endpush
