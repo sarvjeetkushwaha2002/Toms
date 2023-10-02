@@ -1,10 +1,8 @@
 <div class="container-xxl">
     <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
-        <a href="{{route('indexDashboard')}}" class="app-brand-link gap-2">
-            <span class="app-brand-logo demo">
-                <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt="" width="32" height="22" class="rounded-circle">
-            </span>
-            <span class="app-brand-text demo menu-text fw-bold">OnMediums</span>
+        <a href="{{route('indexDashboard')}}" class="app-brand-link">
+            <span><img src="{{asset('assets\img\icons\brands\onmedium_temp.png')}}" alt="" width="80" height="71" class="rounded-circle"></span>
+            <span class="app-brand-text menu-text fw-bold">OnMediums</span>
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
             <i class="ti ti-x ti-sm align-middle"></i>
@@ -344,12 +342,12 @@
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        <img src="{{asset('assets\img\icons\brands\tech-onmediums.png')}}" alt class="h-auto rounded-circle" />
+                        <img src="{{asset('assets\img\icons\brands\onmedium_temp.png')}}" alt class="h-auto rounded-circle" />
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        <a class="dropdown-item" href="{{asset('admin/download/tech-onmediums.apk')}}" download>
+                        <a class="dropdown-item" href="{{asset('admin/download/OnMediums.apk')}}" download>
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
