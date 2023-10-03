@@ -23,3 +23,10 @@
 <!-- Page JS -->
 <script src="{{asset('assets/js/forms-editors.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/select2/select2.js')}}"></script>
+<script>
+    $('a').mouseenter(function() { // Attach this function to all mouseenter events for 'a' tags 
+        responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+        responsiveVoice.speak($(this).text()); // Speak the text contents of all nodes within the current 'a' tag
+    });
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=g30MzZVw"></script>
