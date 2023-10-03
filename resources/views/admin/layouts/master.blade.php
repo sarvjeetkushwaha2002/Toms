@@ -4,6 +4,16 @@
 
 <head>
     @include('admin.layouts.head')
+    <style>
+        #template-customizer .template-customizer-open-btn {
+            background: #f8f7fa;
+            display: none !important;
+        }
+
+        #template-customizer .template-customizer-open-btn::before {
+            background-image: url('assets/img/icons/brands/onmedium_temp.png');
+        }
+    </style>
     @stack('style')
 </head>
 
