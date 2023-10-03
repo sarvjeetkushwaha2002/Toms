@@ -8,8 +8,8 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="{{route('textBycripttools')}}" class="menu-link">
-                <div data-i18n="Bycript Hash Generator">Bycript Hash Generator</div>
+            <a href="{{route('textToSpeechtools')}}" class="menu-link">
+                <div data-i18n="Text To Speech Generator">Text To Speech Generator</div>
             </a>
         </li>
 

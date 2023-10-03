@@ -36,6 +36,9 @@ function copyTextToClipboard(text) {
     dummyInput.select();
     document.execCommand('copy');
     document.body.removeChild(dummyInput);
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are Copy Successfully!');
+    speechSynthesis.speak(speech);
 }
 //Copy Text End
 
@@ -49,6 +52,9 @@ function clearText() {
         textarea.innerText = '';
     }
     updateCounts();
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are remove Successfully!');
+    speechSynthesis.speak(speech);
 }
 
 // Case TEXT Type Start
@@ -82,6 +88,9 @@ function downloadDoc() {
     a.download = 'content.doc';
     a.click();
     URL.revokeObjectURL(url);
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are download Successfully!');
+    speechSynthesis.speak(speech);
 }
 
 function transformText(type) {
@@ -114,6 +123,9 @@ function transformText(type) {
     } else {
         textarea.innerText = newText;
     }
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are convert case Successfully!');
+    speechSynthesis.speak(speech);
 }
 
 function titleCase(text) {

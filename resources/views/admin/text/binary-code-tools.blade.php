@@ -35,6 +35,7 @@ Binary Code Translator || Binary Translator || Convert Case
                         <div>
                             <button type="button" class="btn btn-outline-primary mr-1 mb-1 mt-2" onclick="copyGeneratedText()"><i class="fas fa-copy"></i></button>
                             <button type="button" class="btn btn-outline-danger mr-1 mb-1 mt-2" onclick="clearGeneratedText()"><i class="fas fa-trash"></i></button>
+                            <button type="button" class="btn btn-outline-info mr-1 mb-1 mt-2" onclick="readButttonText()"><i class="fa fa-volume-up"></i></button>
                             <a id="download-link" class="btn btn-outline-success mr-1 mb-1 mt-2" href="#" download="generated_text.txt"><i class="fas fa-download"></i>Text</a>
                         </div>
                     </div>

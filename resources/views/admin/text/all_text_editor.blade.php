@@ -82,6 +82,11 @@ OnMediums || Text Editor
             <div class="card-body">
                 <ul class="nav nav-tabs widget-nav-tabs pb-3 gap-4 mx-1" role="tablist">
                     <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('textToSpeechtools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Text To Speech
+                        </a>
+                    </li>
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
                         <a href="{{route('textConvertortools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                             Convert Case
                         </a>

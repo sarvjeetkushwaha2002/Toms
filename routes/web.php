@@ -50,6 +50,7 @@ Route::controller(TextController::class)->group(function () {
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('text-to-speech', 'textToSpeechtools')->name('textToSpeechtools');
     Route::get('find-replace-text', 'textFindreplacetools')->name('textFindreplacetools');
     Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
     Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');
