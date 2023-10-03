@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function textToSpeechtools()
+    {
+        return view('admin.textsecond.text_to_speech_tools');
+    }
+
     public function textFindreplacetools()
     {
         return view('admin.text.find_replace_text');

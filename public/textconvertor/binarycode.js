@@ -46,16 +46,37 @@ function copyGeneratedText() {
 
     try {
         document.execCommand('copy');
-        alert('Text copied to clipboard Successfully !');
+        const speechSynthesis = window.speechSynthesis;
+        const speech = new SpeechSynthesisUtterance('You are Copy Successfully!');
+        speechSynthesis.speak(speech);
     } catch (err) {
         console.error('Failed to copy text:', err);
     }
+}
+function readButttonText() {
+
+    const textInput = document.getElementById('generated-text');
+    const speechSynthesis = window.speechSynthesis;
+
+    const text = textInput.value;
+
+    if (text.trim() !== '') {
+        const speech = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(speech);
+    } else {
+        const speech = new SpeechSynthesisUtterance('Please enter text to be spoken.');
+        speechSynthesis.speak(speech);
+    }
+
 }
 
 function clearGeneratedText() {
     const generatedTextArea = document.getElementById('generated-text');
     generatedTextArea.value = '';
     updateGeneratedCounts();
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are remove Successfully!');
+    speechSynthesis.speak(speech);
 }
 
 function downloadGeneratedText() {

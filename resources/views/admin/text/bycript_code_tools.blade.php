@@ -120,6 +120,9 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
                 success: function(response) {
                     $('#encripted_code').removeAttr('hidden');
                     $('#encripted_code').val(response);
+                    const speechSynthesis = window.speechSynthesis;
+                    const speech = new SpeechSynthesisUtterance(response);
+                    speechSynthesis.speak(speech);
                 },
                 error: function(error) {
                     // Handle any errors that occur during the AJAX request
@@ -142,6 +145,9 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
                 success: function(response) {
                     $('#matched_code').removeAttr('hidden');
                     $('#matched_code').val(response);
+                    const speechSynthesis = window.speechSynthesis;
+                    const speech = new SpeechSynthesisUtterance(response);
+                    speechSynthesis.speak(speech);
                 },
                 error: function(error) {
                     // Handle any errors that occur during the AJAX request
@@ -165,7 +171,9 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
             inputField.select();
             document.execCommand('copy');
         }
-        alert('copy successfully !')
+        const speechSynthesis = window.speechSynthesis;
+        const speech = new SpeechSynthesisUtterance('You are Copy Successfully!');
+        speechSynthesis.speak(speech);
     }
 
     //Copy Text End
@@ -179,6 +187,9 @@ Bycript Text Generator || Online Bcrypt Hash Generator & Checker ||
         } else {
             inputField.value = ''; // Clear the entire input field
         }
+        const speechSynthesis = window.speechSynthesis;
+        const speech = new SpeechSynthesisUtterance('You are remove Successfully!');
+        speechSynthesis.speak(speech);
     }
 </script>
 

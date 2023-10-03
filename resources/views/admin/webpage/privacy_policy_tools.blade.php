@@ -228,6 +228,9 @@ Privacy Policy Generator || Online Free Privacy Policy Generator || Website Page
                 success: function(response) {
                     if (response.message == 'any fields not fill') {
                         $('#form_error').text('Fill All Required Fields !');
+                        const speechSynthesis = window.speechSynthesis;
+                        const speech = new SpeechSynthesisUtterance('Fill All Required Fields !');
+                        speechSynthesis.speak(speech);
                     } else {
                         $('#text-input').removeAttr('hidden');
                         $('#sendbydata').hide();

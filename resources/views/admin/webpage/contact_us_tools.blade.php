@@ -189,9 +189,11 @@ Contact Us Text Generator || Online Free Contact Us Text Generator|| Website Pag
                 type: 'post',
                 data: formData,
                 success: function(response) {
-                    console.log();
                     if (response.message == 'any fields not fill') {
                         $('#form_error').text('Fill All Required Fields !');
+                        const speechSynthesis = window.speechSynthesis;
+                        const speech = new SpeechSynthesisUtterance('Fill All Required Fields !');
+                        speechSynthesis.speak(speech);
                     } else {
                         $('#text-input').removeAttr('hidden');
                         $('#sendbydata').hide();

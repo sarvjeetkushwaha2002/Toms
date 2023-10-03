@@ -46,7 +46,9 @@ function copyGeneratedText() {
 
     try {
         document.execCommand('copy');
-        alert('Text copied to clipboard Successfully !');
+        const speechSynthesis = window.speechSynthesis;
+        const speech = new SpeechSynthesisUtterance('You are Copy Successfully!');
+        speechSynthesis.speak(speech);
     } catch (err) {
         console.error('Failed to copy text:', err);
     }
@@ -56,6 +58,9 @@ function clearGeneratedText() {
     const generatedTextArea = document.getElementById('generated-text');
     generatedTextArea.value = '';
     updateGeneratedCounts();
+    const speechSynthesis = window.speechSynthesis;
+    const speech = new SpeechSynthesisUtterance('You are remove Successfully!');
+    speechSynthesis.speak(speech);
 }
 
 function downloadGeneratedText() {
