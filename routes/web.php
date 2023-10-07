@@ -2,9 +2,13 @@
 
 use App\Http\Controllers\admin\CodeController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\FrontendBlogController;
 use App\Http\Controllers\admin\PdfController;
 use App\Http\Controllers\admin\TextController;
 use App\Http\Controllers\admin\WebPageController;
+use App\Http\Controllers\admin_pannel\BlogController;
+use App\Http\Controllers\admin_pannel\CategoryController;
+use App\Http\Controllers\admin_pannel\DashboardController as Admin_pannelDashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +22,49 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::controller(Admin_pannelDashboardController::class)->group(function () {
+        Route::get('/dashboard', 'adminPannel')->name('adminPannel');
+    });
+    Route::controller(CategoryController::class)->group(function () {
+        Route::get('/category', 'index')->name('category');
+        Route::post('category-add', 'categoryAdd')->name('categoryAdd');
+        Route::get('is_active/{id}', 'is_active')->name('is_active');
+        Route::get('category-edit/{id}', 'categoryEdit')->name('categoryEdit');
+        Route::post('category-delete/{id}', 'categoryDelete')->name('categoryDelete');
+        Route::post('category-update/{id}', 'categoryUpdate')->name('categoryUpdate');
+
+        Route::get('/sub-category', 'subCategory')->name('subCategory');
+        Route::post('sub-category-add', 'subCategoryAdd')->name('subCategoryAdd');
+        Route::get('sub-category-edit/{id}', 'subCategoryEdit')->name('subCategoryEdit');
+        Route::get('is_active-sub/{id}', 'is_activeSub')->name('is_activeSub');
+        Route::post('sub-category-delete/{id}', 'subCategoryDelete')->name('subCategoryDelete');
+        Route::post('sub-category-update/{id}', 'subCategoryUpdate')->name('subCategoryUpdate');
+
+
+        Route::get('blog', 'Blog')->name('Blog');
+        Route::post('blog-add', 'blogAdd')->name('blogAdd');
+        Route::get('blog-edit/{id}', 'blogEdit')->name('blogEdit');
+        Route::get('is_active-blog/{id}', 'is_activeBlog')->name('is_activeBlog');
+        Route::post('blog-delete/{id}', 'blogDelete')->name('blogDelete');
+        Route::post('blog-update/{id}', 'blogUpdate')->name('blogUpdate');
+    });
+    Route::controller(BlogController::class)->group(function () {
+        Route::get('blog', 'Blog')->name('Blog');
+        Route::get('fetch-sub-category/{category_id}', 'fetchSubcategory')->name('fetchSubcategory');
+        Route::post('blog-add', 'blogAdd')->name('blogAdd');
+        Route::get('blog-edit/{id}', 'blogEdit')->name('blogEdit');
+        Route::get('is_active-blog/{id}', 'is_activeBlog')->name('is_activeBlog');
+        Route::post('blog-delete/{id}', 'blogDelete')->name('blogDelete');
+        Route::post('blog-update/{id}', 'blogUpdate')->name('blogUpdate');
+
+        Route::get('blog-media-list/{id}', 'blogMediaList')->name('blogMediaList');
+        Route::get('blog-media-edit/{id}', 'blogMediaEdit')->name('blogMediaEdit');
+        Route::post('blog-media-update/{id}', 'blogMediaUpdate')->name('blogMediaUpdate');
+        Route::post('blog-media-delete/{id}', 'blogMediaDelete')->name('blogMediaDelete');
+    });
+});
+
 Route::controller(DashboardController::class)->group(function () {
     Route::get('/', 'indexDashboard')->name('indexDashboard');
     Route::get('privacy-policy', 'privacyPolicy')->name('privacyPolicy');
@@ -58,6 +104,10 @@ Route::controller(CodeController::class)->group(function () {
     Route::post('change-by-encript', 'textEncriptchange')->name('textEncriptchange');
     Route::post('check-by-encript', 'textEncriptcheck')->name('textEncriptcheck');
 });
+Route::controller(FrontendBlogController::class)->group(function () {
+    Route::get('blog-list/{filter?}', 'blogFrontend')->name('blogFrontend');
+    Route::get('blog-detail/{slug}', 'blogDetails')->name('blogDetails');
+});
 
 Route::controller(WebPageController::class)->group(function () {
     Route::get('term-condition', 'termAndConditions')->name('termAndConditions');
@@ -76,4 +126,3 @@ Route::controller(WebPageController::class)->group(function () {
     Route::post('create-privacy-policy', 'createPrivacyPolicy')->name('createPrivacyPolicy');
     Route::get('view3-page', 'viewPage3')->name('viewPage3');
 });
-// });
