@@ -22,9 +22,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::get('/login', [Admin_pannelDashboardController::class, 'loginPage'])->name('login');
+Route::post('admin/login', [Admin_pannelDashboardController::class, 'loginAdmin'])->name('admin-login');
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth:web'], function () {
     Route::controller(Admin_pannelDashboardController::class)->group(function () {
         Route::get('/dashboard', 'adminPannel')->name('adminPannel');
+        Route::get('/logout', 'logout')->name('logout');
     });
     Route::controller(CategoryController::class)->group(function () {
         Route::get('/category', 'index')->name('category');
