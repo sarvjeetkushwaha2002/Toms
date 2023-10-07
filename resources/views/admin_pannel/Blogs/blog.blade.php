@@ -85,7 +85,7 @@ OnMediums || Blog
                         <div class="row card-body mt-3 p-10 field_wrapper">
                             <div class="col-12">
                                 <label class="form-label">Image 1 </label>
-                                <input type="file" id="image" class="form-control " name="image[]" placeholder="Enter only on ends" required />
+                                <input type="file" id="image" class="form-control " name="image[]" placeholder="Enter only on ends" />
                             </div>
 
                             <div class="col-12">
@@ -214,7 +214,7 @@ OnMediums || Blog
         $(wrapper1).append('<div class="row card-body mt-3 p-10 field_wrapper" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">\
         <div class="col-12">\
                                 <label class="form-label">Image ' + (r) + ' </label>\
-                                <input type="file" id="image" class="form-control " name="image[]" placeholder="Enter only on ends" required />\
+                                <input type="file" id="image" class="form-control " name="image[]" placeholder="Enter only on ends"/>\
                             </div>\
                             <div class="col-12">\
                           <label class="form-label" for="bootstrap-maxlength-example2">Description ' + (r) + '</label>\

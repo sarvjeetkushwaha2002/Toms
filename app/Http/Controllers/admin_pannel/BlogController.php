@@ -62,19 +62,37 @@ class BlogController extends Controller
             'slug' => $slug,
         ]);
 
-        if ($request->description != null) {
+        // if ($request->description != null) {
+        //     foreach ($request->description as $key => $value) {
+        //         $imageName[$key] = null;
+        //         if ($request->hasFile('image')) {
+        //             $imageName[$key] = 'blogimg' . time() . rand() . '.' . $request->image[$key]->extension();
+        //             $request->image[$key]->move(public_path('Upload/Blog'), $imageName[$key]);
+        //         }
+        //         $blog->images()->create([
+        //             'image' => 'Upload/Blog/' . $imageName[$key],
+        //             'description' => $value,
+        //         ]);
+        //     }
+        // }
+        if ($request->has('description')) {
             foreach ($request->description as $key => $value) {
-                $imageName = null;
+                $imageName[$key] = null;
+                // Check if 'image' field exists in the request
                 if ($request->hasFile('image')) {
-                    $imageName = 'blogimg' . time() . rand() . '.' . $request->image[$key]->extension();
-                    $request->image[$key]->move(public_path('Upload/Blog'), $imageName);
+                    // Ensure that $request->image is an array and has a valid element at the specified key
+                    if (isset($request->image[$key]) && $request->image[$key]->isValid()) {
+                        $imageName[$key] = 'blogimg' . time() . rand() . '.' . $request->image[$key]->extension();
+                        $request->image[$key]->move(public_path('Upload/Blog'), $imageName[$key]);
+                    }
                 }
                 $blog->images()->create([
-                    'image' => 'Upload/Blog/' . $imageName,
+                    'image' => $imageName[$key] ? 'Upload/Blog/' . $imageName[$key] : null,
                     'description' => $value,
                 ]);
             }
         }
+
 
         if ($blog) {
             return redirect()->back()->with('success', 'Blog Added Sucessfully');

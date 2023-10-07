@@ -56,12 +56,10 @@ Blog
                                 <div class="my-5">
                                     <img src="{{asset($blog->image ??'')}}" alt="" class="img-thumbnail mx-auto d-block">
                                 </div>
-                                <hr>
                                 <div class="mt-4">
                                     <div class="text-muted font-size-14">
                                         <p>{!! $blog->description !!}
                                         </p>
-                                        <hr>
                                     </div>
                                 </div>
                                 @empty
