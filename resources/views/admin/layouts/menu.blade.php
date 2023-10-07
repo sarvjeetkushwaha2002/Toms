@@ -8,6 +8,12 @@
             </a>
         </li>
         <li class="menu-item">
+            <a href="{{route('blogFrontend')}}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Blog">Blog</div>
+            </a>
+        </li>
+        <li class="menu-item">
             <a href="{{route('textToSpeechtools')}}" class="menu-link">
                 <div data-i18n="Text To Speech Generator">Text To Speech Generator</div>
             </a>
