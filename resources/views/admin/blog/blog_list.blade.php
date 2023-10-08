@@ -33,6 +33,11 @@ Blog
                 <div class="tab-pane fade active show" id="form-tabs-personal" role="tabpanel">
                     <div class="row g-3 mb-3">
                         <div class="col mb-3">
+                            @if ($blogs->isEmpty())
+                            <div class="card p-1 border shadow-none">
+                                No Found Data !
+                            </div>
+                            @else
                             <div class="card p-1 border shadow-none">
                                 <div class="p-3">
 
@@ -64,6 +69,7 @@ Blog
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         </div>
                     </div>
                     <div class="row g-3">

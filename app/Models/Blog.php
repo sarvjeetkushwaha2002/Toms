@@ -14,6 +14,10 @@ class Blog extends Model
     {
         return $this->MorphMany(BlogMedia::class, 'imageable');
     }
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'commentable');
+    }
     public function blogcategory()
     {
         return $this->belongsTo(Category::class, 'category_id');
