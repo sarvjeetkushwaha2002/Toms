@@ -173,11 +173,11 @@
                         <div data-i18n="Duplicate Line Remover Generator">Duplicate Line Remover Generator</div>
                     </a>
                 </li>
-                <!-- <li class="menu-item">
-                    <a href="{{route('textBubbletools')}}" class="menu-link">
-                        <div data-i18n="Bubble Text Generator">Bubble Text Generator</div>
+                <li class="menu-item">
+                    <a href="{{route('colorCodePicktools')}}" class="menu-link">
+                        <div data-i18n="Gradient Color Picker && Code">Gradient Color Picker && Code</div>
                     </a>
-                </li> -->
+                </li>
             </ul>
         </li>
     </ul>

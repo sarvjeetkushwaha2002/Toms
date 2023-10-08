@@ -99,6 +99,7 @@ Route::controller(TextController::class)->group(function () {
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('color-code-picker', 'colorCodePicktools')->name('colorCodePicktools');
     Route::get('text-to-speech', 'textToSpeechtools')->name('textToSpeechtools');
     Route::get('find-replace-text', 'textFindreplacetools')->name('textFindreplacetools');
     Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
