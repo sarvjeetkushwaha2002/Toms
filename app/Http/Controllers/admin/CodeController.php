@@ -13,6 +13,10 @@ class CodeController extends Controller
     {
         return view('admin.textsecond.text_to_speech_tools');
     }
+    public function imageResizetools()
+    {
+        return view('admin.image.image_resize');
+    }
     public function colorCodePicktools()
     {
         return view('admin.color.color_generator');

@@ -178,6 +178,11 @@
                         <div data-i18n="Gradient Color Picker && Code">Gradient Color Picker && Code</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('imageResizetools')}}" class="menu-link">
+                        <div data-i18n="Image Resizer Generator">Image Resizer Generator</div>
+                    </a>
+                </li>
             </ul>
         </li>
     </ul>
