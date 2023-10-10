@@ -1,15 +1,26 @@
 {
-  "tools": [
+  "pages": [
     {
       "name": "Home",
       "icon": "ti-smart-home",
       "url": "/"
     }
   ],
+  "files": [
+    {
+      "name": "Apk",
+      "subtitle": "By OnMediums",
+      "src": "admin/download/OnMediums.apk",
+      "meta": "17kb",
+      "url": "javascript:;"
+    }
+  ],
   "members": [
     {
-      "name": "OnMediums",
-      "subtitle": "Admin"
+      "name": "On Mediums",
+      "subtitle": "Admin",
+      "src": "img/icons/brands/onmedium_temp.png",
+      "url": "/"
     }
   ]
 }

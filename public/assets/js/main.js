@@ -35,8 +35,8 @@ if (document.getElementById('layout-menu')) {
       showDropdownOnHover: localStorage.getItem('templateCustomizer-' + templateName + '--ShowDropdownOnHover') // If value(showDropdownOnHover) is set in local storage
         ? localStorage.getItem('templateCustomizer-' + templateName + '--ShowDropdownOnHover') === 'true' // Use the local storage value
         : window.templateCustomizer !== undefined // If value is set in config.js
-        ? window.templateCustomizer.settings.defaultShowDropdownOnHover // Use the config.js value
-        : true // Use this if you are not using the config.js and want to set value directly from here
+          ? window.templateCustomizer.settings.defaultShowDropdownOnHover // Use the config.js value
+          : true // Use this if you are not using the config.js and want to set value directly from here
     });
     // Change parameter to true if you want scroll animation
     window.Helpers.scrollToActive((animate = false));
@@ -56,7 +56,7 @@ if (document.getElementById('layout-menu')) {
             'templateCustomizer-' + templateName + '--LayoutCollapsed',
             String(window.Helpers.isCollapsed())
           );
-        } catch (e) {}
+        } catch (e) { }
       }
     });
   });
@@ -329,7 +329,7 @@ if (document.getElementById('layout-menu')) {
             localStorage.getItem('templateCustomizer-' + templateName + '--LayoutCollapsed') === 'true',
             false
           );
-      } catch (e) {}
+      } catch (e) { }
     }
   }
 })();
@@ -428,14 +428,14 @@ if (typeof $ !== 'undefined') {
               }
             },
             // ? Add/Update blocks as per need
-            // Pages
+            // tools
             {
-              name: 'pages',
+              name: 'tools',
               display: 'name',
               limit: 5,
-              source: filterConfig(searchData.pages),
+              source: filterConfig(searchData.tools),
               templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Pages</h6>',
+                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">tools</h6>',
                 suggestion: function ({ url, icon, name }) {
                   return (
                     '<a href="' +
@@ -454,88 +454,88 @@ if (typeof $ !== 'undefined') {
                 },
                 notFound:
                   '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Pages</h6>' +
+                  '<h6 class="suggestions-header text-primary mb-2">tools</h6>' +
                   '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
                   '</div>'
               }
             },
             // Files
-            {
-              name: 'files',
-              display: 'name',
-              limit: 4,
-              source: filterConfig(searchData.files),
-              templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Files</h6>',
-                suggestion: function ({ src, name, subtitle, meta }) {
-                  return (
-                    '<a href="javascript:;">' +
-                    '<div class="d-flex w-50">' +
-                    '<img class="me-3" src="' +
-                    assetsPath +
-                    src +
-                    '" alt="' +
-                    name +
-                    '" height="32">' +
-                    '<div class="w-75">' +
-                    '<h6 class="mb-0">' +
-                    name +
-                    '</h6>' +
-                    '<small class="text-muted">' +
-                    subtitle +
-                    '</small>' +
-                    '</div>' +
-                    '</div>' +
-                    '<small class="text-muted">' +
-                    meta +
-                    '</small>' +
-                    '</a>'
-                  );
-                },
-                notFound:
-                  '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Files</h6>' +
-                  '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
-                  '</div>'
-              }
-            },
+            // {
+            //   name: 'files',
+            //   display: 'name',
+            //   limit: 4,
+            //   source: filterConfig(searchData.files),
+            //   templates: {
+            //     header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Files</h6>',
+            //     suggestion: function ({ src, name, subtitle, meta }) {
+            //       return (
+            //         '<a href="javascript:;">' +
+            //         '<div class="d-flex w-50">' +
+            //         '<img class="me-3" src="' +
+            //         assetsPath +
+            //         src +
+            //         '" alt="' +
+            //         name +
+            //         '" height="32">' +
+            //         '<div class="w-75">' +
+            //         '<h6 class="mb-0">' +
+            //         name +
+            //         '</h6>' +
+            //         '<small class="text-muted">' +
+            //         subtitle +
+            //         '</small>' +
+            //         '</div>' +
+            //         '</div>' +
+            //         '<small class="text-muted">' +
+            //         meta +
+            //         '</small>' +
+            //         '</a>'
+            //       );
+            //     },
+            //     notFound:
+            //       '<div class="not-found px-3 py-2">' +
+            //       '<h6 class="suggestions-header text-primary mb-2">Files</h6>' +
+            //       '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
+            //       '</div>'
+            //   }
+            // },
             // Members
-            {
-              name: 'members',
-              display: 'name',
-              limit: 4,
-              source: filterConfig(searchData.members),
-              templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Members</h6>',
-                suggestion: function ({ name, src, subtitle }) {
-                  return (
-                    '<a href="app-user-view-account.html">' +
-                    '<div class="d-flex align-items-center">' +
-                    '<img class="rounded-circle me-3" src="' +
-                    assetsPath +
-                    src +
-                    '" alt="' +
-                    name +
-                    '" height="32">' +
-                    '<div class="user-info">' +
-                    '<h6 class="mb-0">' +
-                    name +
-                    '</h6>' +
-                    '<small class="text-muted">' +
-                    subtitle +
-                    '</small>' +
-                    '</div>' +
-                    '</div>' +
-                    '</a>'
-                  );
-                },
-                notFound:
-                  '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Members</h6>' +
-                  '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
-                  '</div>'
-              }
-            }
+            // {
+            //   name: 'members',
+            //   display: 'name',
+            //   limit: 4,
+            //   source: filterConfig(searchData.members),
+            //   templates: {
+            //     header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Members</h6>',
+            //     suggestion: function ({ name, src, subtitle }) {
+            //       return (
+            //         '<a href="app-user-view-account.html">' +
+            //         '<div class="d-flex align-items-center">' +
+            //         '<img class="rounded-circle me-3" src="' +
+            //         assetsPath +
+            //         src +
+            //         '" alt="' +
+            //         name +
+            //         '" height="32">' +
+            //         '<div class="user-info">' +
+            //         '<h6 class="mb-0">' +
+            //         name +
+            //         '</h6>' +
+            //         '<small class="text-muted">' +
+            //         subtitle +
+            //         '</small>' +
+            //         '</div>' +
+            //         '</div>' +
+            //         '</a>'
+            //       );
+            //     },
+            //     notFound:
+            //       '<div class="not-found px-3 py-2">' +
+            //       '<h6 class="suggestions-header text-primary mb-2">Members</h6>' +
+            //       '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
+            //       '</div>'
+            //   }
+            // }
           )
           //On typeahead result render.
           .bind('typeahead:render', function () {

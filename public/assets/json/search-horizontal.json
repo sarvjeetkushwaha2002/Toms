@@ -4,12 +4,143 @@
       "name": "Home",
       "icon": "ti-smart-home",
       "url": "/"
+    },
+    {
+      "name": "Text To Speech",
+      "icon": "",
+      "url": "text-to-speech"
+    },
+    {
+      "name": "Image Resizer Generator",
+      "icon": "",
+      "url": "image-resize"
+    },
+    {
+      "name": "Gradient Color Picker && Code",
+      "icon": "",
+      "url": "color-code-picker"
+    },
+    {
+      "name": "Convert Case",
+      "icon": "",
+      "url": "text-convertor-tools"
+    },
+    {
+      "name": "Small Text Generator",
+      "icon": "",
+      "url": "small-text-generator"
+    },
+    {
+      "name": "Wide Text Generator",
+      "icon": "",
+      "url": "wide-text-generator"
+    },
+    {
+      "name": "Reverse Text Generator",
+      "icon": "",
+      "url": "reverse-text-generator"
+    },
+    {
+      "name": "Strikethrough Text Generator",
+      "icon": "",
+      "url": "strikethrough-text-generator"
+    },
+    {
+      "name": "Title Case Text Generator",
+      "icon": "",
+      "url": "title-case-converter"
+    },
+    {
+      "name": "Plan Text Convertor",
+      "icon": "",
+      "url": "plan-text-convertor"
+    },
+    {
+      "name": "Italic Text Generator",
+      "icon": "",
+      "url": "italic-text-converter"
+    },
+    {
+      "name": "Blod Text Generator",
+      "icon": "",
+      "url": "bold-text-converter"
+    },
+    {
+      "name": "Social Media(Facebook,Instagram) Text Generator",
+      "icon": "",
+      "url": "social-media-text-converter"
+    },
+    {
+      "name": "Bubble Text Generator",
+      "icon": "",
+      "url": "bubble-text-converter"
+    },
+    {
+      "name": "Find and Replace Text",
+      "icon": "",
+      "url": "find-replace-text"
+    },
+    {
+      "name": "Duplicate Line Remover",
+      "icon": "",
+      "url": "duplicate-line-remover"
+    },
+    {
+      "name": "Online Bcrypt Hash Generator & Checker",
+      "icon": "",
+      "url": "bycript-text-generator"
+    },
+    {
+      "name": "Binary Code Translator",
+      "icon": "",
+      "url": "binary-code-translator"
+    },
+    {
+      "name": "Hex To Text Convertor",
+      "icon": "",
+      "url": "hex-code-translator"
+    },
+    {
+      "name": "Morse Code Translator",
+      "icon": "",
+      "url": "morse-code-translator"
+    },
+    {
+      "name": "Online Free Terms & Conditions Generator",
+      "icon": "",
+      "url": "term-condition-page"
+    },
+    {
+      "name": "Online Free Privacy Policy Generator",
+      "icon": "",
+      "url": "privacy-policy-page"
+    },
+    {
+      "name": "Online Free Contact Us Text Generator",
+      "icon": "",
+      "url": "contact-us-page"
+    },
+    {
+      "name": "Online Free About Us Text Generator",
+      "icon": "",
+      "url": "about-us-page"
+    }
+  ],
+  "files": [
+    {
+      "name": "Apk",
+      "subtitle": "By OnMediums",
+      "src": "admin/download/OnMediums.apk",
+      "meta": "17kb",
+      "url": "javascript:;"
     }
   ],
   "members": [
     {
-      "name": "OnMediums",
-      "subtitle": "Admin"
+      "name": "On Mediums",
+      "subtitle": "Admin",
+      "src": "img/icons/brands/onmedium_temp.png",
+      "url": "/"
     }
   ]
 }
