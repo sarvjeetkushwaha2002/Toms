@@ -174,6 +174,11 @@
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="{{route('underLinetools')}}" class="menu-link">
+                        <div data-i18n="Underline Text Generator">Underline Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="{{route('colorCodePicktools')}}" class="menu-link">
                         <div data-i18n="Gradient Color Picker && Code">Gradient Color Picker && Code</div>
                     </a>

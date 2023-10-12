@@ -141,6 +141,11 @@ OnMediums || Text Editor
                             Blod Text Tool
                         </a>
                     </li>
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('underLinetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Underline Text Tool
+                        </a>
+                    </li>
                     <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
                         <a href="{{route('textSocialtools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                             Social Media Text Tool

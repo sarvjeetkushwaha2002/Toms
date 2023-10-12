@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function underLinetools()
+    {
+        return view('admin.text.under_line_tool');
+    }
     public function slugifyUrltools()
     {
         return view('admin.textsecond.slugify_url_tool');
