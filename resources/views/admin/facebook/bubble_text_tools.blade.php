@@ -96,5 +96,132 @@ Bubble Text Generator || Bubble Font Generator || Convert Case ||
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/bubblecode.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        const socialFont2 = text.split('').map(char => getSocial2Char(char)).join('');
+        const socialFont3 = text.split('').map(char => getSocial3Char(char)).join('');
+
+        return `${socialFont3}\n\n${socialFont2}`;
+    }
+
+
+    function getSocial2Char(char) {
+        const social2fontscriptMap = {
+            'a': '🅐',
+            'b': '🅑',
+            'c': '🅒',
+            'd': '🅓',
+            'e': '🅔',
+            'f': '🅕',
+            'g': '🅖',
+            'h': '🅗',
+            'i': '🅘',
+            'j': '🅙',
+            'k': '🅚',
+            'l': '🅛',
+            'm': '🅜',
+            'n': '🅝',
+            'o': '🅞',
+            'p': '🅟',
+            'q': '🅠',
+            'r': '🅡',
+            's': '🅢',
+            't': '🅣',
+            'u': '🅤',
+            'v': '🅥',
+            'w': '🅦',
+            'x': '🅧',
+            'y': '🅨',
+            'z': '🅩',
+            'A': '🅐',
+            'B': '🅑',
+            'C': '🅒',
+            'D': '🅓',
+            'E': '🅔',
+            'F': '🅕',
+            'G': '🅖',
+            'H': '🅗',
+            'I': '🅘',
+            'J': '🅙',
+            'K': '🅚',
+            'L': '🅛',
+            'M': '🅜',
+            'N': '🅝',
+            'O': '🅞',
+            'P': '🅟',
+            'Q': '🅠',
+            'R': '🅡',
+            'S': '🅢',
+            'T': '🅣',
+            'U': '🅤',
+            'V': '🅥',
+            'W': '🅦',
+            'X': '🅧',
+            'Y': '🅨',
+            'Z': '🅩',
+        };
+
+        return social2fontscriptMap[char] || char;
+    }
+
+    function getSocial3Char(char) {
+        const social3fontscriptMap = {
+            'a': 'ⓐ',
+            'b': 'ⓑ',
+            'c': 'ⓒ',
+            'd': 'ⓓ',
+            'e': 'ⓔ',
+            'f': 'ⓕ',
+            'g': 'ⓖ',
+            'h': 'ⓗ',
+            'i': 'ⓘ',
+            'j': 'ⓙ',
+            'k': 'ⓚ',
+            'l': 'ⓛ',
+            'm': 'ⓜ',
+            'n': 'ⓝ',
+            'o': 'ⓞ',
+            'p': 'ⓟ',
+            'q': 'ⓠ',
+            'r': 'ⓡ',
+            's': 'ⓢ',
+            't': 'ⓣ',
+            'u': 'ⓤ',
+            'v': 'ⓥ',
+            'w': 'ⓦ',
+            'x': 'ⓧ',
+            'y': 'ⓨ',
+            'z': 'ⓩ',
+            'A': 'Ⓐ',
+            'B': 'Ⓑ',
+            'C': 'Ⓒ',
+            'D': 'Ⓓ',
+            'E': 'Ⓔ',
+            'F': 'Ⓕ',
+            'G': 'Ⓖ',
+            'H': 'Ⓗ',
+            'I': 'Ⓘ',
+            'J': 'Ⓙ',
+            'K': 'Ⓚ',
+            'L': 'Ⓛ',
+            'M': 'Ⓜ',
+            'N': 'Ⓝ',
+            'O': 'Ⓞ',
+            'P': 'Ⓟ',
+            'Q': 'Ⓠ',
+            'R': 'Ⓡ',
+            'S': 'Ⓢ',
+            'T': 'Ⓣ',
+            'U': 'Ⓤ',
+            'V': 'Ⓥ',
+            'W': 'Ⓦ',
+            'X': 'Ⓧ',
+            'Y': 'Ⓨ',
+            'Z': 'Ⓩ',
+        };
+
+        return social3fontscriptMap[char] || char;
+    }
+</script>
 @endpush

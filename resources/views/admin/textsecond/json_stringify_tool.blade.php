@@ -1,21 +1,20 @@
 @extends('admin.layouts.master')
 @section('title')
-Duplicate Line Remover || Online Duplicate Line Remover || Convert Case
+Online Json Stringify Text Generator || Json Stringify Text Generator || Convert Case
 @endsection
 @section('content-main')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Modification Formatting Tools/</a></span>Duplicate Line Remover</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span><span class="text-muted fw-light"><a href="{{route('indexTextEditorall')}}">All Text Modification Formatting Tools/</a></span>Json Stringify Text Generator</h4>
 <div class="row">
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Duplicate Line Remover By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+            <h5 class="card-header text-center">Json Stringify Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Enter Your Text....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
-                            <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="write-text" contenteditable="true" oninput="updateText();" placeholder="Enter Your Text
-Enter Your Text"></textarea>
+                            <textarea name="description" class="form-control form-control-lg" cols="30" rows="10" id="write-text" contenteditable="true" oninput="updateText();" placeholder="Enter Your Text"></textarea>
                         </fieldset>
                         <p class="text-center">
                             <strong>Words Count: <span id="write-word-count">0</span></strong>
@@ -26,7 +25,7 @@ Enter Your Text"></textarea>
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>Generated Response....👇</p>
                         <fieldset class="form-group position-relative has-icon-left mb-0">
-                            <textarea name="generated-description" class="form-control form-control-lg" cols="30" rows="10" id="generated-text" contenteditable="true" placeholder="Enter Your Text"></textarea>
+                            <textarea name="generated-description" class="form-control form-control-lg" cols="30" rows="10" id="generated-text" contenteditable="true" placeholder='"Enter Your Text"'></textarea>
                         </fieldset>
                         <p class="text-center">
                             <strong>Words Count: <span id="generated-word-count">0</span></strong>
@@ -49,18 +48,18 @@ Enter Your Text"></textarea>
         <div class="card">
             <div class="card-header text-center">
                 <div class="card-title mb-0 text-center">
-                    <h5 class="mb-0 ">How To Use Duplicate Line Remover By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+                    <h5 class="mb-0 ">How To Use Json Stringify Text Generator By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
                 </div>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-title mb-0">
-                            <h5 class="mb-0">Duplicate Line Remover</h5>
-                            <small>Enter Value Automatic Generator </small><br><br>
-                            <p><b>1.</b>You mentioned that when a value is entered in the "Enter your text" 'Enter Your Text,
-                                Enter Your Text' textarea, the text will be generated in text formats 'Enter Your Text' in the second textarea. <br><br>
-                                <b>2.</b>Whether you're handling extensive datasets, streamlining lists, or seeking to eradicate repetitive information, our tool is here to streamline your process. Just paste your text, and let our tool take care of the rest!"
+                            <h5 class="mb-0">Json Stringify Text Generator</h5>
+                            <small>Enter Value Automatic Generator Josn Stringify Text</small><br><br>
+                            <p><b>1.</b>You mentioned that when a value is entered in the
+                                Enter Your Text' textarea, the text will be generated in text formats "Enter Your Text" in the second textarea. <br><br>
+                                <b>2.</b>If you want to convert text to a JSON string and save time by using a JSON stringify text generator tool
                             </p>
                         </div>
                     </div>
@@ -96,18 +95,8 @@ Enter Your Text"></textarea>
 <script src="{{asset('textconvertor/json_stringify.js')}}"></script>
 <script>
     function convertTextFormat(text) {
-
-        const inputText = text;
-        const removelineOutput = document.getElementById('generated-text');
-        const lines = inputText.split('\n');
-        const uniqueLines = [];
-        for (const line of lines) {
-            if (!uniqueLines.includes(line)) {
-                uniqueLines.push(line);
-            }
-        }
-        removelineOutput.value = uniqueLines.join('\n');
-        return removelineOutput.value;
+        const cleanedText = text.replace(/\s+/g, ' ').trim();
+        return `"${cleanedText}"`;
     }
 </script>
 @endpush

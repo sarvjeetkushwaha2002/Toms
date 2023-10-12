@@ -15,56 +15,6 @@ function updateText() {
     updateGeneratedCounts();
 }
 
-function convertTextFormat(text) {
-    const smallCaps = text.split('').map(char => char === '' ? '' : char.toUpperCase()).join('');
-    const superscript = text.split('').map(char => getSuperscriptChar(char)).join('');
-
-    return `Small Caps\n${smallCaps}\n\nSuperscript\n${superscript}`;
-}
-
-function getSuperscriptChar(char) {
-    const superscriptMap = {
-        '0': '⁰',
-        '1': '¹',
-        '2': '²',
-        '3': '³',
-        '4': '⁴',
-        '5': '⁵',
-        '6': '⁶',
-        '7': '⁷',
-        '8': '⁸',
-        '9': '⁹',
-        'a': 'ᵃ',
-        'b': 'ᵇ',
-        'c': 'ᶜ',
-        'd': 'ᵈ',
-        'e': 'ᵉ',
-        'f': 'ᶠ',
-        'g': 'ᵍ',
-        'h': 'ʰ',
-        'i': 'ⁱ',
-        'j': 'ʲ',
-        'k': 'ᵏ',
-        'l': 'ˡ',
-        'm': 'ᵐ',
-        'n': 'ⁿ',
-        'o': 'ᵒ',
-        'p': 'ᵖ',
-        'q': 'ᵠ',
-        'r': 'ʳ',
-        's': 'ˢ',
-        't': 'ᵗ',
-        'u': 'ᵘ',
-        'v': 'ᵛ',
-        'w': 'ʷ',
-        'x': 'ˣ',
-        'y': 'ʸ',
-        'z': 'ᶻ',
-    };
-
-    return superscriptMap[char.toLowerCase()] || char;
-}
-
 function updateGeneratedCounts() {
     const generatedTextArea = document.getElementById('generated-text');
     const generatedText = generatedTextArea.value;
@@ -84,6 +34,7 @@ function copyGeneratedText() {
         const speechSynthesis = window.speechSynthesis;
         const speech = new SpeechSynthesisUtterance('You are Copy Successfully!');
         speechSynthesis.speak(speech);
+        alert('You are Copy Successfully!');
     } catch (err) {
         console.error('Failed to copy text:', err);
     }
@@ -96,6 +47,7 @@ function clearGeneratedText() {
     const speechSynthesis = window.speechSynthesis;
     const speech = new SpeechSynthesisUtterance('You are remove Successfully!');
     speechSynthesis.speak(speech);
+    alert('You are remove Successfully!');
 }
 
 function downloadGeneratedText() {

@@ -97,6 +97,8 @@ Route::controller(CodeController::class)->group(function () {
     Route::get('color-code-picker', 'colorCodePicktools')->name('colorCodePicktools');
     Route::get('image-resize', 'imageResizetools')->name('imageResizetools');
     Route::get('text-to-speech', 'textToSpeechtools')->name('textToSpeechtools');
+    Route::get('slug-url-text', 'slugifyUrltools')->name('slugifyUrltools');
+    Route::get('json-stringify-text', 'jsonStringifytools')->name('jsonStringifytools');
     Route::get('find-replace-text', 'textFindreplacetools')->name('textFindreplacetools');
     Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
     Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');

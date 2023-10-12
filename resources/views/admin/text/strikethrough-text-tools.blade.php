@@ -91,5 +91,11 @@ Strikethrough Text Generator || Cross Out Text Generator ||
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/strikethrough-text.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        const strikeThrough = text.split('').map(char => char === '' ? '' : char + '\u0336').join('');
+        return `${strikeThrough}`;
+    }
+</script>
 @endpush

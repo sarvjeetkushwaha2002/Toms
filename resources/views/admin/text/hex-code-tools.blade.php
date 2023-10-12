@@ -92,5 +92,34 @@ Hex To Text Generator || Hex To Text Convertor || Convertor Case
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/hexcode.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        const inputText = text;
+        const hexOutput = document.getElementById('generated-text');
+
+        const hexText = inputText.split('').map(char => char.charCodeAt(0).toString(16)).join(' ');
+
+        hexOutput.value = hexText;
+        return hexOutput.value;
+    }
+
+
+    function readButttonText() {
+
+        const textInput = document.getElementById('generated-text');
+        const speechSynthesis = window.speechSynthesis;
+
+        const text = textInput.value;
+
+        if (text.trim() !== '') {
+            const speech = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(speech);
+        } else {
+            const speech = new SpeechSynthesisUtterance('Please enter text to be spoken.');
+            speechSynthesis.speak(speech);
+        }
+
+    }
+</script>
 @endpush

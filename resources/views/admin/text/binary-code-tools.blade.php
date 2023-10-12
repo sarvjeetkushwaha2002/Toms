@@ -92,5 +92,38 @@ Binary Code Translator || Binary Translator || Convert Case
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/binarycode.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        const inputText = text;
+        const binaryOutput = document.getElementById('generated-text');
+
+        let binaryResult = '';
+
+        for (let i = 0; i < inputText.length; i++) {
+            const char = inputText.charCodeAt(i).toString(2);
+            binaryResult += '0'.repeat(8 - char.length) + char + ' '; // Pad to 8 bits
+        }
+
+        binaryOutput.value = binaryResult.trim();
+        return binaryOutput.value;
+    }
+
+    function readButttonText() {
+
+        const textInput = document.getElementById('generated-text');
+        const speechSynthesis = window.speechSynthesis;
+
+        const text = textInput.value;
+
+        if (text.trim() !== '') {
+            const speech = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(speech);
+        } else {
+            const speech = new SpeechSynthesisUtterance('Please enter text to be spoken.');
+            speechSynthesis.speak(speech);
+        }
+
+    }
+</script>
 @endpush

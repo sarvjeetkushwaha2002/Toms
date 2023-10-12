@@ -183,6 +183,16 @@
                         <div data-i18n="Image Resizer Generator">Image Resizer Generator</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('jsonStringifytools')}}" class="menu-link">
+                        <div data-i18n="Json Stringify Text Generator">Json Stringify Text Generator</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('slugifyUrltools')}}" class="menu-link">
+                        <div data-i18n="Slug Url Text Generator">Slug Url Text Generator</div>
+                    </a>
+                </li>
             </ul>
         </li>
     </ul>

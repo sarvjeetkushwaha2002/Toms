@@ -9,6 +9,14 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function slugifyUrltools()
+    {
+        return view('admin.textsecond.slugify_url_tool');
+    }
+    public function jsonStringifytools()
+    {
+        return view('admin.textsecond.json_stringify_tool');
+    }
     public function textToSpeechtools()
     {
         return view('admin.textsecond.text_to_speech_tools');

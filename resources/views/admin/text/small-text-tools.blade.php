@@ -97,5 +97,56 @@ Superscript
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/smalltext_generator.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        const smallCaps = text.split('').map(char => char === '' ? '' : char.toUpperCase()).join('');
+        const superscript = text.split('').map(char => getSuperscriptChar(char)).join('');
+
+        return `Small Caps\n${smallCaps}\n\nSuperscript\n${superscript}`;
+    }
+
+    function getSuperscriptChar(char) {
+        const superscriptMap = {
+            '0': '⁰',
+            '1': '¹',
+            '2': '²',
+            '3': '³',
+            '4': '⁴',
+            '5': '⁵',
+            '6': '⁶',
+            '7': '⁷',
+            '8': '⁸',
+            '9': '⁹',
+            'a': 'ᵃ',
+            'b': 'ᵇ',
+            'c': 'ᶜ',
+            'd': 'ᵈ',
+            'e': 'ᵉ',
+            'f': 'ᶠ',
+            'g': 'ᵍ',
+            'h': 'ʰ',
+            'i': 'ⁱ',
+            'j': 'ʲ',
+            'k': 'ᵏ',
+            'l': 'ˡ',
+            'm': 'ᵐ',
+            'n': 'ⁿ',
+            'o': 'ᵒ',
+            'p': 'ᵖ',
+            'q': 'ᵠ',
+            'r': 'ʳ',
+            's': 'ˢ',
+            't': 'ᵗ',
+            'u': 'ᵘ',
+            'v': 'ᵛ',
+            'w': 'ʷ',
+            'x': 'ˣ',
+            'y': 'ʸ',
+            'z': 'ᶻ',
+        };
+
+        return superscriptMap[char.toLowerCase()] || char;
+    }
+</script>
 @endpush

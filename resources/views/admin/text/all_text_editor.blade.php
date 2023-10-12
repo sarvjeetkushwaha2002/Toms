@@ -92,6 +92,16 @@ OnMediums || Text Editor
                         </a>
                     </li>
                     <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('jsonStringifytools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Json Stringify Text Tool
+                        </a>
+                    </li>
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
+                        <a href="{{route('slugifyUrltools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Slug Url Text Tool
+                        </a>
+                    </li>
+                    <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
                         <a href="{{route('textSmalltools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                             Small text Tool
                         </a>

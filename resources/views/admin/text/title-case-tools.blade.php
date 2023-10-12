@@ -91,5 +91,12 @@ Title Case Text Generator || Capitalize Text Generator ||
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('textconvertor/titleconvertor.js')}}"></script>
+<script src="{{asset('textconvertor/json_stringify.js')}}"></script>
+<script>
+    function convertTextFormat(text) {
+        return text.replace(/\w\S*/g, (word) => {
+            return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
+        });
+    }
+</script>
 @endpush
