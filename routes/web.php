@@ -60,11 +60,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth:web']
         Route::get('is_active-blog/{id}', 'is_activeBlog')->name('is_activeBlog');
         Route::post('blog-delete/{id}', 'blogDelete')->name('blogDelete');
         Route::post('blog-update/{id}', 'blogUpdate')->name('blogUpdate');
-
-        Route::get('blog-media-list/{id}', 'blogMediaList')->name('blogMediaList');
-        Route::get('blog-media-edit/{id}', 'blogMediaEdit')->name('blogMediaEdit');
-        Route::post('blog-media-update/{id}', 'blogMediaUpdate')->name('blogMediaUpdate');
-        Route::post('blog-media-delete/{id}', 'blogMediaDelete')->name('blogMediaDelete');
     });
 });
 

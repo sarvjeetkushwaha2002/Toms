@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('thumbnail');
             $table->string('meta_description');
+            $table->longText('description');
             $table->string('meta_keyword');
             $table->string('category_id');
             $table->string('subcategory_id');

@@ -51,20 +51,12 @@ Blog
                                     </div>
                                 </div>
                                 <hr>
-
-                                @forelse ($blogDetail->images as $k=>$blog )
-                                <div class="my-5">
-                                    <img src="{{asset($blog->image ??'')}}" alt="" class="img-thumbnail mx-auto d-block">
-                                </div>
                                 <div class="mt-4">
                                     <div class="text-muted font-size-14">
-                                        <p>{!! $blog->description !!}
-                                        </p>
+                                        <p>{!! $blogDetail->description ?? '' !!}</p>
                                     </div>
                                 </div>
-                                @empty
 
-                                @endforelse
                                 <!-- <div class="mt-4">
 
                                     <div class="mt-5">
@@ -206,7 +198,7 @@ Blog
                                         </a>
                                     </li>
                                 </ul>
-                                <p>{!! $blog->images->first()->description ??'' !!}</p>
+                                <p>{!! $blog->meta_description ??'' !!}</p>
 
                                 <div>
                                     <a href="{{route('blogDetails',$blog->slug)}}" class="text-primary">Read more <i class="mdi mdi-arrow-right"></i></a>
@@ -236,5 +228,20 @@ Blog
 
 @endsection
 @push('scripts')
+<script>
+    var blogDescription = "<?php echo $blogDetail->description ?? ''; ?>"; // Get the PHP description into a JavaScript variable
 
+    // Check the value of blogDescription and set contenteditable accordingly
+    if (blogDescription) {
+        document.addEventListener("DOMContentLoaded", function() {
+            var elementsWithClass = document.getElementsByClassName("ql-editor");
+
+            // Check if there are elements with the class
+            if (elementsWithClass.length > 0) {
+                // Set contenteditable to "false" for the first matching element
+                elementsWithClass[0].setAttribute("contenteditable", "false");
+            }
+        });
+    }
+</script>
 @endpush

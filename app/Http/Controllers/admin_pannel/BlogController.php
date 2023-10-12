@@ -4,8 +4,8 @@ namespace App\Http\Controllers\admin_pannel;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
-use App\Models\BlogMedia;
 use App\Models\SubCategory;
+use DOMDocument;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\File;
@@ -35,14 +35,14 @@ class BlogController extends Controller
     public function blogAdd(Request $request)
     {
 
+
         $request->validate([
             'title' => 'required',
             'meta_keyword' => 'required',
             'meta_description' => 'required',
             'category' => 'required',
             'sub_category' => 'required',
-            'thumbnail' => 'required|image',
-            'description' => 'required'
+            'thumbnail' => 'required',
         ]);
 
         $thumbnail = null;
@@ -60,39 +60,8 @@ class BlogController extends Controller
             'meta_keyword' => $request->meta_keyword,
             'thumbnail' => 'Upload/Blog/' . $thumbnail,
             'slug' => $slug,
+            'description' => 'Enter Your Data',
         ]);
-
-        // if ($request->description != null) {
-        //     foreach ($request->description as $key => $value) {
-        //         $imageName[$key] = null;
-        //         if ($request->hasFile('image')) {
-        //             $imageName[$key] = 'blogimg' . time() . rand() . '.' . $request->image[$key]->extension();
-        //             $request->image[$key]->move(public_path('Upload/Blog'), $imageName[$key]);
-        //         }
-        //         $blog->images()->create([
-        //             'image' => 'Upload/Blog/' . $imageName[$key],
-        //             'description' => $value,
-        //         ]);
-        //     }
-        // }
-        if ($request->has('description')) {
-            foreach ($request->description as $key => $value) {
-                $imageName[$key] = null;
-                // Check if 'image' field exists in the request
-                if ($request->hasFile('image')) {
-                    // Ensure that $request->image is an array and has a valid element at the specified key
-                    if (isset($request->image[$key]) && $request->image[$key]->isValid()) {
-                        $imageName[$key] = 'blogimg' . time() . rand() . '.' . $request->image[$key]->extension();
-                        $request->image[$key]->move(public_path('Upload/Blog'), $imageName[$key]);
-                    }
-                }
-                $blog->images()->create([
-                    'image' => $imageName[$key] ? 'Upload/Blog/' . $imageName[$key] : null,
-                    'description' => $value,
-                ]);
-            }
-        }
-
 
         if ($blog) {
             return redirect()->back()->with('success', 'Blog Added Sucessfully');
@@ -125,14 +94,15 @@ class BlogController extends Controller
     }
     public function blogUpdate(Request $request, $id)
     {
+
         $request->validate([
             'title' => 'required',
             'meta_keyword' => 'required',
             'meta_description' => 'required',
             'category' => 'required',
             'sub_category' => 'required',
+            'editorData' => 'required',
         ]);
-
 
         if ($request->hasFile('thumbnail')) {
             $thumbnail = 'thumb' . time() . rand() . '.' . $request->thumbnail->extension();
@@ -154,19 +124,31 @@ class BlogController extends Controller
                 'slug' => $slug,
             ]);
         }
+        $doc = new DOMDocument();
+        $doc->loadHTML($request->editorData);
+        $divs = $doc->getElementsByTagName('div');
+        foreach ($divs as $div) {
+            $div->setAttribute('contenteditable', 'false');
+        }
+        $inputElements = $doc->getElementsByTagName('input');
+        foreach ($inputElements as $input) {
+            $input->setAttribute('hidden', 'true');
+        }
 
+        // Updated data with contenteditable attributes changed
+        $updatedData = $doc->saveHTML();
         $blog = Blog::find($id)->update([
             'title' => $request->title,
             'subcategory_id' => $request->sub_category,
             'category_id' => $request->category,
             'meta_description' => $request->meta_description,
             'meta_keyword' => $request->meta_keyword,
+            'description' => $updatedData,
         ]);
 
+
         if ($blog) {
-            return redirect()->back()->with('success', 'Blog Updated Sucessfully');
-        } else {
-            return redirect()->back()->with('error', 'Blog not Update ');
+            return  'Blog Updated Sucessfully';
         }
     }
 
@@ -184,66 +166,6 @@ class BlogController extends Controller
             return redirect(route('admin.Blog'))->with('success', ' Blog Deleted Sucessfully');
         } else {
             return redirect(route('admin.Blog'))->with('error', 'Blog not delete ');
-        }
-    }
-
-    public function blogMediaList($id)
-    {
-        $id = Crypt::decrypt($id);
-        $blogMedias = BlogMedia::where('imageable_id', $id)->get();
-        return view('admin_pannel.Blogs.blogmedia', compact('blogMedias'));
-    }
-
-    public function blogMediaEdit($id)
-    {
-        $id = Crypt::decrypt($id);
-        $edit = BlogMedia::find($id);
-        $blogMedias = BlogMedia::where('imageable_id', $edit->imageable_id)->get();
-        return view('admin_pannel.Blogs.blogmedia', compact('blogMedias', 'edit'));
-    }
-
-    public function blogMediaUpdate(Request $request, $id)
-    {
-        $request->validate([
-            'description' => 'required',
-        ]);
-        if ($request->hasFile('image')) {
-            $blogimg = 'blogimg' . time() . rand() . '.' . $request->image->extension();
-            $img = BlogMedia::find($id)->image;
-            if (File::exists($img)) {
-                File::delete($img);
-            }
-            $request->image->move(public_path('Upload/Blog'), $blogimg);
-            $blogMedia = BlogMedia::find($id)->update([
-                'image' => 'Upload/Blog/' . $blogimg,
-
-            ]);
-        }
-        $blogMedia = BlogMedia::find($id)->update([
-            'description' => $request->description,
-        ]);
-
-        if ($blogMedia) {
-            return redirect()->back()->with('success', 'Blog Media Updated Sucessfully');
-        } else {
-            return redirect()->back()->with('error', 'Blog Media not Update ');
-        }
-    }
-
-    public function blogMediaDelete($id)
-    {
-        $id = Crypt::decrypt($id);
-        $img = BlogMedia::find($id)->image;
-        if ($img) {
-            if (File::exists($img)) {
-                File::delete($img);
-            }
-        }
-        $delete = BlogMedia::find($id)->delete();
-        if ($delete) {
-            return redirect(route('admin.Blog'))->with('success', ' Blog Media Deleted Sucessfully');
-        } else {
-            return redirect(route('admin.Blog'))->with('error', 'Blog Media not delete ');
         }
     }
 }

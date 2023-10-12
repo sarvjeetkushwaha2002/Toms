@@ -30,9 +30,10 @@ OnMediums || Blog
                     @endif
                 </div>
                 <div class="row">
-                    <form action="{{isset($edit)?route('admin.blogUpdate',$edit->id):route('admin.blogAdd')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{isset($edit)?'':route('admin.blogAdd')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
+                            <input type="text" class="form-control" id="blog_id" placeholder="Enter ..." aria-describedby="blog_id" name="blog_id" value="{{$edit->id ?? ''}}" hidden readonly>
                             <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                                 <label for="title" class="form-label">Title</label>
                                 <input type="text" class="form-control" id="title" placeholder="Enter ..." aria-describedby="title" name="title" value="{{$edit->title ?? ''}}">
@@ -78,8 +79,11 @@ OnMediums || Blog
                                 <label for="thumbnail" class="form-label">Thumbnail</label>
                                 <input type="file" class="form-control" id="thumbnail" placeholder="Enter ..." aria-describedby="thumbnail" name="thumbnail" value="{{$edit->thumbnail ?? ''}}">
                             </div>
+                            @if (isset($edit))
+                            <div id="full-editor">{!!$edit->description!!}</div>
+                            @endif
                         </div>
-                        @if (isset($edit))
+                        <!-- @if (isset($edit))
 
                         @else
                         <div class="row card-body mt-3 p-10 field_wrapper">
@@ -100,9 +104,9 @@ OnMediums || Blog
                             </div>
 
                         </div>
-                        @endif
+                        @endif -->
                         <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12 mt-4">
-                            <button type="submit" class="btn btn-primary"> {{isset($edit)? 'Update':'Submit'}}</button>
+                            <button type="{{isset($edit)? 'button':'submit'}}" id="{{isset($edit)? 'submit-button':''}}" class="btn btn-primary"> {{isset($edit)? 'Update':'Submit'}}</button>
                         </div>
                     </form>
                 </div>
@@ -154,7 +158,6 @@ OnMediums || Blog
                                             <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="grid"></i></button>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 @php $bid=Crypt::encrypt($blog->id); @endphp
-                                                <a class="dropdown-item" href="{{route('admin.blogMediaList',$bid)}}"><i class="me-1" data-feather="check-square"></i><span class="align-middle">Step</span></a>
                                                 <a class="dropdown-item" href="{{route('admin.blogEdit',$bid)}}"><i class="me-1" data-feather="check-square"></i><span class="align-middle">Edit</span></a>
                                                 <a class="dropdown-item" href="" onclick="event.preventDefault();document.getElementById('delete-form-{{ $bid }}').submit();"><i class="me-1" data-feather="message-square"></i><span class="align-middle">Delete</span></a>
                                             </div>
@@ -204,7 +207,7 @@ OnMediums || Blog
     });
 </script>
 
-<script>
+<!-- <script>
     var addButton1 = $('.addButton');
     var wrapper1 = $('.field_wrapper');
     var i = 1;
@@ -235,7 +238,7 @@ OnMediums || Blog
         $(this).closest('.field_wrapper').remove(); //Remove field html
 
     });
-</script>
+</script> -->
 
 <script>
     $(document).ready(function() {
@@ -263,4 +266,44 @@ OnMediums || Blog
         });
     });
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#submit-button').on('click', function() {
+            // Get input values
+            var editorData = document.getElementById('full-editor').innerHTML;
+            var title = $('#title').val();
+            var metaKeyword = $('#meta_keyword').val();
+            var metaDescription = $('#meta_description').val();
+            var category = $('#category').val();
+            var subCategory = $('#sub_category').val();
+            var blogId = $('#blog_id').val()
+            // Create an object to hold the data
+            var data = {
+                _token: '{{ csrf_token() }}',
+                title: title,
+                meta_keyword: metaKeyword,
+                meta_description: metaDescription,
+                category: category,
+                sub_category: subCategory,
+                editorData: editorData,
+            };
+            var newurl = "{{ url('admin/blog-update') }}/" + blogId;
+            // Send a POST request to the controller
+            $.ajax({
+                type: 'POST',
+                url: newurl,
+                data: data,
+                success: function(response) {
+                    alert(response);
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors
+                }
+            });
+        });
+    });
+</script>
+
 @endpush

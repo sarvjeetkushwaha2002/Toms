@@ -38,13 +38,13 @@ Blog
                                 No Found Data !
                             </div>
                             @else
+
                             <div class="card p-1 border shadow-none">
                                 <div class="p-3">
 
                                     <h5><a href="{{route('blogDetails',$blogs->first()->slug)}}" class="text-dark">{{$blogs->first()->title ??''}}</a></h5>
                                     <p class="text-muted mb-0">{{$blogs->first()->created_at ??''}}</p>
                                 </div>
-
                                 <div class="position-relative">
                                     <a href="{{route('blogDetails',$blogs->first()->slug)}}"><img src="{{asset($blogs->first()->thumbnail ?? '')}}" alt="" class="img-thumbnail"></a>
                                 </div>
@@ -62,7 +62,7 @@ Blog
                                             </a>
                                         </li>
                                     </ul>
-                                    <p>{!!$blogs->first()->images->first()->description ??''!!}</p>
+                                    <p>{{$blogs->first()->meta_description ??''}}</p>
 
                                     <div>
                                         <a href="{{route('blogDetails',$blogs->first()->slug)}}" class="text-primary">Read more <i class="mdi mdi-arrow-right"></i></a>
@@ -99,7 +99,7 @@ Blog
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p>{!! $blog->images->first()->description ??'' !!}</p>
+                                        <p>{!! $blog->images->first()->meta_description ??'' !!}</p>
 
                                         <div>
                                             <a href="{{route('blogDetails',$blog->slug)}}" class="text-primary">Read more <i class="mdi mdi-arrow-right"></i></a>
