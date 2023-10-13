@@ -62,6 +62,7 @@ class BlogController extends Controller
             'slug' => $slug,
             'description' => 'Enter Your Data',
         ]);
+        dd($blog);
 
         if ($blog) {
             return redirect()->back()->with('success', 'Blog Added Sucessfully');
