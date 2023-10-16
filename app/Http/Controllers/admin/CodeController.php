@@ -9,6 +9,14 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function jsonToCsvtools()
+    {
+        return view('admin.textsecond.json_to_csv_tool');
+    }
+    public function csvToJsontools()
+    {
+        return view('admin.textsecond.csv_to_json_tool');
+    }
     public function underLinetools()
     {
         return view('admin.text.under_line_tool');
