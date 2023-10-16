@@ -128,6 +128,16 @@
                         <div data-i18n="Morse Code Translator">Morse Code Translator</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('csvToJsontools')}}" class="menu-link">
+                        <div data-i18n="CSV to JSON Converter">CSV to JSON Converter</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('jsonToCsvtools')}}" class="menu-link">
+                        <div data-i18n="JSON to CSV Converter">CSV to JSON Converter</div>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="menu-item">

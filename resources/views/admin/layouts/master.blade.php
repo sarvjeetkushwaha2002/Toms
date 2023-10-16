@@ -148,6 +148,16 @@
                                             </a>
                                         </li>
                                         <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
+                                            <a href="{{route('csvToJsontools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                                                CSV to JSON Converter
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
+                                            <a href="{{route('jsonToCsvtools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                                                JSON to CSV Converter
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
                                             <a href="{{route('textHexcodetools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
                                                 Hex Code Translator
                                             </a>

@@ -94,6 +94,8 @@ Route::controller(TextController::class)->group(function () {
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('json-to-csv', 'jsonToCsvtools')->name('jsonToCsvtools');
+    Route::get('csv-to-json', 'csvToJsontools')->name('csvToJsontools');
     Route::get('color-code-picker', 'colorCodePicktools')->name('colorCodePicktools');
     Route::get('image-resize', 'imageResizetools')->name('imageResizetools');
     Route::get('text-to-speech', 'textToSpeechtools')->name('textToSpeechtools');
