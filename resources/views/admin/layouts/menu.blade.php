@@ -138,6 +138,16 @@
                         <div data-i18n="JSON to CSV Converter">CSV to JSON Converter</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('textToUtf8Encodetools')}}" class="menu-link">
+                        <div data-i18n="Text to UTF-8 Encode Converter">Text to UTF-8 Encode Converter</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('utf8encodeToutf8decodetools')}}" class="menu-link">
+                        <div data-i18n="UTF-8 Decode to Text Converter">UTF-8 Decode to Text Converter</div>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="menu-item">

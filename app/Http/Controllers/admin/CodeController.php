@@ -9,6 +9,16 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function textToUtf8Encodetools()
+    {
+        return view('admin.textsecond.utf8_encode_tool');
+    }
+
+    public function utf8encodeToutf8decodetools()
+    {
+        return view('admin.textsecond.utf8_decode_tool');
+    }
+
     public function jsonToCsvtools()
     {
         return view('admin.textsecond.json_to_csv_tool');
