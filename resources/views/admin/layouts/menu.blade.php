@@ -148,6 +148,11 @@
                         <div data-i18n="UTF-8 Decode to Text Converter">UTF-8 Decode to Text Converter</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="{{route('randomPasswordtools')}}" class="menu-link">
+                        <div data-i18n="Random Password Generator">Random Password Generator</div>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="menu-item">

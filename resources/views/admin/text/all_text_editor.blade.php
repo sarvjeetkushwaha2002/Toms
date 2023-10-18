@@ -138,7 +138,7 @@ OnMediums || Text Editor
                     </li>
                     <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
                         <a href="{{route('textBoldtools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            Blod Text Tool
+                            Bold Text Tool
                         </a>
                     </li>
                     <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">

@@ -6,122 +6,167 @@
       "url": "/"
     },
     {
-      "name": "Text To Speech",
+      "name": "Text To Speech Generator Tool",
       "icon": "",
       "url": "text-to-speech"
     },
     {
-      "name": "Image Resizer Generator",
+      "name": "Image Resizer Generator Tool",
       "icon": "",
       "url": "image-resize"
     },
     {
-      "name": "Gradient Color Picker && Code",
+      "name": "Gradient Color Picker && Code Tool",
       "icon": "",
       "url": "color-code-picker"
     },
     {
-      "name": "Convert Case",
-      "icon": "",
-      "url": "text-convertor-tools"
-    },
-    {
-      "name": "Small Text Generator",
-      "icon": "",
-      "url": "small-text-generator"
-    },
-    {
-      "name": "Wide Text Generator",
-      "icon": "",
-      "url": "wide-text-generator"
-    },
-    {
-      "name": "Reverse Text Generator",
-      "icon": "",
-      "url": "reverse-text-generator"
-    },
-    {
-      "name": "Strikethrough Text Generator",
-      "icon": "",
-      "url": "strikethrough-text-generator"
-    },
-    {
-      "name": "Title Case Text Generator",
-      "icon": "",
-      "url": "title-case-converter"
-    },
-    {
-      "name": "Plan Text Convertor",
-      "icon": "",
-      "url": "plan-text-convertor"
-    },
-    {
-      "name": "Italic Text Generator",
-      "icon": "",
-      "url": "italic-text-converter"
-    },
-    {
-      "name": "Blod Text Generator",
-      "icon": "",
-      "url": "bold-text-converter"
-    },
-    {
-      "name": "Social Media(Facebook,Instagram) Text Generator",
-      "icon": "",
-      "url": "social-media-text-converter"
-    },
-    {
-      "name": "Bubble Text Generator",
-      "icon": "",
-      "url": "bubble-text-converter"
-    },
-    {
-      "name": "Find and Replace Text",
+      "name": "Find Replace Text Generator Tool",
       "icon": "",
       "url": "find-replace-text"
     },
     {
-      "name": "Duplicate Line Remover",
+      "name": "Json Stringify Text Generator Tool",
+      "icon": "",
+      "url": "json-stringify-text"
+    },
+    {
+      "name": " Slug Url Text Generator Tool",
+      "icon": "",
+      "url": "slug-url-text"
+    },
+    {
+      "name": "Convert Case Tool",
+      "icon": "",
+      "url": "text-convertor-tools"
+    },
+    {
+      "name": "Small Text Generator Tool",
+      "icon": "",
+      "url": "small-text-generator"
+    },
+    {
+      "name": "Wide Text Generator Tool",
+      "icon": "",
+      "url": "wide-text-generator"
+    },
+    {
+      "name": "Reverse Text Generator Tool",
+      "icon": "",
+      "url": "reverse-text-generator"
+    },
+    {
+      "name": "Strikethrough Text Generator Tool",
+      "icon": "",
+      "url": "strikethrough-text-generator"
+    },
+    {
+      "name": "Title Case Text Generator Tool",
+      "icon": "",
+      "url": "title-case-converter"
+    },
+    {
+      "name": "Plan Text Convertor Tool",
+      "icon": "",
+      "url": "plan-text-convertor"
+    },
+    {
+      "name": "Italic Text Generator Tool",
+      "icon": "",
+      "url": "italic-text-converter"
+    },
+    {
+      "name": "Bold Text Generator Tool",
+      "icon": "",
+      "url": "bold-text-converter"
+    },
+    {
+      "name": "Social Media Text Generator Tool (Facebook,Instagram)",
+      "icon": "",
+      "url": "social-media-text-converter"
+    },
+    {
+      "name": "Bubble Text Generator Tool",
+      "icon": "",
+      "url": "bubble-text-converter"
+    },
+    {
+      "name": "Find and Replace Text Tool",
+      "icon": "",
+      "url": "find-replace-text"
+    },
+    {
+      "name": "Duplicate Line Remover Generator Tool",
       "icon": "",
       "url": "duplicate-line-remover"
     },
     {
-      "name": "Online Bcrypt Hash Generator & Checker",
+      "name": "Online Bycript Hash Generator & Checker Tool",
       "icon": "",
       "url": "bycript-text-generator"
     },
     {
-      "name": "Binary Code Translator",
+      "name": "Binary Code Translator Tool",
       "icon": "",
       "url": "binary-code-translator"
     },
     {
-      "name": "Hex To Text Convertor",
+      "name": "Hex Code Translator Tool",
       "icon": "",
       "url": "hex-code-translator"
     },
     {
-      "name": "Morse Code Translator",
+      "name": "Underline Text Generator Tool",
+      "icon": "",
+      "url": "under-line-text"
+    },
+    {
+      "name": "Morse Code Translator Tool",
       "icon": "",
       "url": "morse-code-translator"
     },
     {
-      "name": "Online Free Terms & Conditions Generator",
+      "name": "CSV to JSON Converter Tool",
+      "icon": "",
+      "url": "csv-to-json"
+    },
+    {
+      "name": "JSON to CSV Converter Tool",
+      "icon": "",
+      "url": "json-to-csv"
+    },
+    {
+      "name": "Text to UTF-8 Encode Converter Tool",
+      "icon": "",
+      "url": "text-to-utf-8-encode"
+    },
+    {
+      "name": "UTF-8 Decode to Text Converter Tool",
+      "icon": "",
+      "url": "utf-8-encode-to-text-decode"
+    },
+    {
+      "name": "Random Password Generator And Checker Tool",
+      "icon": "",
+      "url": "random-password-generator"
+    },
+    {
+      "name": "Online Free Terms & Conditions Generator Tool",
       "icon": "",
       "url": "term-condition-page"
     },
     {
-      "name": "Online Free Privacy Policy Generator",
+      "name": "Online Free Privacy Policy Generator Tool",
       "icon": "",
       "url": "privacy-policy-page"
     },
     {
-      "name": "Online Free Contact Us Text Generator",
+      "name": "Online Free Contact Us Text Generator Tool",
       "icon": "",
       "url": "contact-us-page"
     },
     {
-      "name": "Online Free About Us Text Generator",
+      "name": "Online Free About Us Text Generator Tool",
       "icon": "",
       "url": "about-us-page"
     }
