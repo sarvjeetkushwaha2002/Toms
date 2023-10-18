@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
+    public function randomPasswordtools()
+    {
+        return view('admin.textsecond.password_maker_tool');
+    }
     public function textToUtf8Encodetools()
     {
         return view('admin.textsecond.utf8_encode_tool');

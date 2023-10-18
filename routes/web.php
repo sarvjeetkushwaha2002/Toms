@@ -94,6 +94,7 @@ Route::controller(TextController::class)->group(function () {
 });
 
 Route::controller(CodeController::class)->group(function () {
+    Route::get('random-password-generator', 'randomPasswordtools')->name('randomPasswordtools');
     Route::get('text-to-utf-8-encode', 'textToUtf8Encodetools')->name('textToUtf8Encodetools');
     Route::get('utf-8-encode-to-text-decode', 'utf8encodeToutf8decodetools')->name('utf8encodeToutf8decodetools');
     Route::get('json-to-csv', 'jsonToCsvtools')->name('jsonToCsvtools');
