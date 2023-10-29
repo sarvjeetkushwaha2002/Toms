@@ -3,7 +3,7 @@
 OnMediums || Dashboard
 @endsection
 @section('content-pannel')
-hiiii
+Welcome to Dashboard !
 @endsection
 @push('scripts')
 
