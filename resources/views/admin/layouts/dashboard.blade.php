@@ -105,8 +105,8 @@ OnMediums || Dashboard
                         </a>
                     </li>
                     <li class="nav-item bg-label-secondary rounded p-2" role="presentation">
-                        <a href="{{route('textBycripttools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            Bycript Hash Generator
+                        <a href="{{route('textBcrypttools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Bcrypt Hash Generator
                         </a>
                     </li>
                     <li class="nav-item bg-label-secondary rounded p-2" role="presentation">

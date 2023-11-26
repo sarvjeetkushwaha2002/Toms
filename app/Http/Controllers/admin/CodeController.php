@@ -66,7 +66,7 @@ class CodeController extends Controller
         return view('admin.text.all_code_data_translator');
     }
 
-    public function textBycripttools()
+    public function textBcrypttools()
     {
         return view('admin.text.bycript_code_tools');
     }

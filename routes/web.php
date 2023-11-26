@@ -107,7 +107,7 @@ Route::controller(CodeController::class)->group(function () {
     Route::get('json-stringify-text', 'jsonStringifytools')->name('jsonStringifytools');
     Route::get('find-replace-text', 'textFindreplacetools')->name('textFindreplacetools');
     Route::get('all-code-data-translator', 'allcodeDatatransalator')->name('allcodeDatatransalator');
-    Route::get('bycript-text-generator', 'textBycripttools')->name('textBycripttools');
+    Route::get('bcrypt-text-generator', 'textBcrypttools')->name('textBcrypttools');
     Route::get('hex-code-translator', 'textHexcodetools')->name('textHexcodetools');
     Route::post('change-by-encript', 'textEncriptchange')->name('textEncriptchange');
     Route::post('check-by-encript', 'textEncriptcheck')->name('textEncriptcheck');

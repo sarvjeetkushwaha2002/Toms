@@ -101,9 +101,9 @@
       "url": "duplicate-line-remover"
     },
     {
-      "name": "Online Bycript Hash Generator & Checker Tool",
+      "name": "Online Bcrypt Hash Generator & Checker Tool",
       "icon": "",
-      "url": "bycript-text-generator"
+      "url": "bcrypt-text-generator"
     },
     {
       "name": "Binary Code Translator Tool",
