@@ -109,8 +109,8 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{route('textBycripttools')}}" class="menu-link">
-                        <div data-i18n="Bycript Text Generator">Bycript Text Generator</div>
+                    <a href="{{route('textBcrypttools')}}" class="menu-link">
+                        <div data-i18n="Bcrypt Text Generator">Bcrypt Text Generator</div>
                     </a>
                 </li>
                 <li class="menu-item">

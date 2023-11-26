@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('title')
-Bycript Text Generator || Online Bycript Hash Generator & Checker ||
+Bcrypt Text Generator || Online Bcrypt Hash Generator & Checker ||
 @endsection
 @section('content-main')
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><a href="{{route('indexDashboard')}}">Home /</a></span>All Coding & Data Translation Tools</h4>
@@ -8,14 +8,14 @@ Bycript Text Generator || Online Bycript Hash Generator & Checker ||
     <!-- Full Editor -->
     <div class="col-12 mb-4">
         <div class="card">
-            <h5 class="card-header text-center">Online Bycript Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
+            <h5 class="card-header text-center">Online Bcrypt Hash Generator & Checker By <a href="{{route('indexDashboard')}}" class="fw-semibold">OnMediums</a></h5>
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-12 col-sm-12">
                         <p>
                             <b>
                                 <h3>Encrypt</h3>
-                                Encrypt some text. The result shown will be a Bycript encrypted hash.
+                                Encrypt some text. The result shown will be a Bcrypt encrypted hash.
                             </b>
                         </p>
                         <form id="sendbydata">
@@ -38,7 +38,7 @@ Bycript Text Generator || Online Bycript Hash Generator & Checker ||
                         <p>
                             <b>
                                 <h3>Decrypt</h3>
-                                Test your bycript hash against some plaintext, to see if they match.
+                                Test your bcrypt hash against some plaintext, to see if they match.
                             </b>
                         </p>
                         <form id="check_encript_code">
@@ -72,8 +72,8 @@ Bycript Text Generator || Online Bycript Hash Generator & Checker ||
             <div class="card-body">
                 <ul class="nav nav-tabs widget-nav-tabs pb-3 gap-4 mx-1" role="tablist">
                     <li class="nav-item bg-label-secondary rounded p-2 " role="presentation">
-                        <a href="{{route('textBycripttools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
-                            Bycript Hash Generator
+                        <a href="{{route('textBcrypttools')}}" class="nav-link btn d-flex flex-column align-items-center justify-content-center" aria-controls="navs-orders-id" aria-selected="false" tabindex="-1">
+                            Bcrypt Hash Generator
                         </a>
                     </li>
                     <li class="nav-item  bg-label-secondary rounded p-2 " role="presentation">
